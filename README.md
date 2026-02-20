@@ -12,7 +12,7 @@ i.  Reveal hidden files on your operating system
   
 ii. Open the `.git/config` file by navigating to your local repo folder, open the hidden `.git` folder, then open the config file (note: this is different from the `.gitconfig` file in the repo’s root folder)
 
-iii. Identify your version of unity ( `2022.3.42f1`). This will replace the word `VERSION` in the paths commented below depending on your OS. Then, add the following text to the bottom of the file, replacing `<path to UnityYAMLMerge>` with the one specific to your OS and Unity version. For instance, in Unity version 2022.3.19f1 on Windows, the last line should be `cmd = 'C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.42f1\\Editor\\Data\\Tools\\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"`
+iii. Identify your version of unity ( `2022.3.62f3`). This will replace the word `VERSION` in the paths commented below depending on your OS. Then, add the following text to the bottom of the file, replacing `<path to UnityYAMLMerge>` with the one specific to your OS and Unity version. For instance, in Unity version 2022.3.62f3 on Windows, the last line should be `cmd = 'C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.62f3\\Editor\\Data\\Tools\\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"`
 ```bash
 [mergetool "unityyamlmerge"]
     trustExitCode = false
@@ -36,7 +36,7 @@ On MacOS and Linux, the pre-commit and post-merge files need to be made executab
 > chmod 755 post-merge
 ```
 ## 4. Open the Unity Project
-The project is created using '`2022.3.42f1`. 
+The project is created using '`2022.3.62f3`. 
 
 ## Video tutorials
 1. Github setup: https://youtu.be/iWniKp_O21o?feature=shared
