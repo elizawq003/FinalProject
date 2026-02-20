@@ -1,4 +1,3 @@
-# FinalProject
 
 # Unity Project Setup
 
