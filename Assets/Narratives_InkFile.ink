@@ -188,7 +188,7 @@ And you will pay for my rents? Also my costs of travelling around?#Class:Blue
 Maggie: No way! I'm still a little girl counting every penny just to have some savings.#Teen_smile
 What are you saving for?#Class:Blue
 Maggie: A trip to Star City. Patty has promised me, if she manages to get an offer from Light City University, her parents will reward her some money. Plus her private savings, that may be enough for a trip to Star City.
-I have impression of that.#Class:Blue
+I remember that. Vaguely.#Class:Blue
 Maggie: What's the outcome?
     {TeenAffinity>0:
     (She was asking in an eager manner. I really don't want to disappoint her.)#Class:Purple
@@ -305,6 +305,7 @@ Maggie: Oh, thanks for your reminder. I'll do that!#Teen_smile
 (You will sleep at 2:00AM tonight as you always do. Tomorrow you will wake up at 7:30AM to catch the shuttle to your office. If you complete this feature on time, you will be freed from that unnecessary commitment of attendance, and you will  wake up at 10:00AM each day if there is nothing urgent.)#Class:Purple
 (That's why you are always working so hard, from teenage years till now. It is 28 Dec, 3 days to new year. You still have ample time to work.)
 ~Stability=Stability+2
+
 ->Day2
 *"To make my family proud of me." You mumbled.
 (You have been walking alone for so long, and you know your parents are proud of you. As the only successful applicant from River Ville, your name is equated to a legend of success in your hometown.)#Class:Purple
@@ -339,10 +340,130 @@ Look up.#Class:Blue
 
 
 ===Day2===
+An official visited the Helio Centre today. It took you far too long to explain why he had to change into a radiation protection suit, and why no phones were allowed inside the core tower.#type_animation
+He is nitpicking your service. You are trained to stabilize light cores, not to soothe fragile egos.#type_animation
+That visit has drained your energy. When you come home, you only want to grab yourself some food. Perhaps hot chocolate and cheese cake can be a good choice? Definitely not 10PM coffee and instant noodle. You need to treat yourself.#type_animation
+->AfterSelection
+
+=AfterSelection
+??:Hi Hi, can you hear me?
+Again???#Class:Blue
+(You can't tell why such things happen again. It seems like something supernatural is going on. Though you definitely feel that these encounters are wasting your time - yesterday evening, to complete your plan, you stayed up until 3AM, 1hr later than you normal routine.)#Class:Purple
+(It's such a bad day. You almost hope there are two toothpicks there to hold your eyelids open, so that you won't be in that sleepy state when presenting to that frustrating man.)#Class:Purple
+(On your way back, you keep telling yourself: Do not answer. Not a word. Even if that voice is calling you. Pretend it never exists.)#Class:Purple
+??:Hey, are you there?
+(That voice keeps calling. You turn on your laptop, and there's no figure showing. It would be easier to pretend the voice doesn’t exist.)
+*[Open your work file and proceed with your plan today.]->Work
+*[Respond to the voice.]->Respond
+
+=Work
+??:Catch me if you can!
+(You need to focus. Your progress has been delayed yesterday, and you can't afford to drag behind another day.)#Class:Purple
+*{Repulsion==3}"Get away from here."You said.
+(You said that with a decisive tone, leaving no room for question. You didn't hear anything after then, as if that existence has been erased.)#Class:Purple
+->AfterWork
+
+*Pretend you never hear anything.
+??: I think I've been giving you sufficient clues to find me - guess where I am? (Deliberately lowered voice) Agent X is in the midst of investigating a evil dryad. This dryad, pretends to be dead and swallows everything that approaches... Help me! Agent X is caught!
+->Pretend1
+
+=Pretend1
+*[Pretend you never hear anything]->Pretend
+
+*[I know where you are! You are inside the body of Bernard!]->Respond
+#Class:Blue
+
+=Pretend
+??: Come on! What should I do to get you respond? I know you are here. I always know.
+This is the final notice: if you don't respond, I will never talk to you again.
+*[Pretend you never hear anything]->AfterWork
+*[Ok, OK, I hear you. You must be with poor old Bernard]->Respond
+
+=Respond
+
+(Bernard is an old oak tree. Every year towards winter, you would see squirrels revolving around.)#Class:Purple
+(Bernard has a hollow body, and down at the root there is an entrance that can accommodate a child. That was your secret base. You didn't even tell Patty about that, so you are always the winner in hide and seek. It was the only place in the world that belonged solely to you.)#Class:Purple
+??:Amazing!
+(A girl emerges on your screen. Welcome, Agent X, to future - yes, Agent X is your 6-year-old self. She's an agent from supernatural research institution - based on her own setting)#Class:Purple #Kid_default
+(Why did you call yourself Agent X? You don't know, but such a cringe worthy past!)
+Agent X: Tell me more about yourself. You are the first one to find me! I can't imagine anyone else except myself to know Bernard. I must have heard my future self talking to me!#Kid_smile
+(Was I so loud and fussy back then?)#Class:Purple
+Ermm...I'm an engineer. #Kid_default
+Agent X: What is enginger?
+......You can understand engineer as a more practical scientist.#Kid_smile
+Cool! I've always dreamt to be a scientist!
+(This sounds like everyone's first dream since young, and 99% will give up, including yourself. You shrugged with a resigned smile)#Class:Purple
+Agent X: Thanks for responding me! Now it's your turn. You can ask me anything - as a reward for rescuing Agent X from the evil dyrad!
+*He's Bernard, not a evil dyrad or anything like that...
+Agent X: Hoho, Bernard is so kind that he willingly accepted the character assignment of the evil dyrad! Let's give him a round of applause, for his fantastic performance!
+    **Clap for Bernard
+    ~KidAffinity++
+    Agent X: Three cheers for Bernard!
+        ***Three cheers for Bernard!
+        Agent X: Encore!
+        ~KidAffinity++
+            ****Encore!
+            ~KidAffinity++
+            You are funny! Why you dumbly follow whatever I say?#Kid_smile
+            *****Because I care for you.
+            Agent X: That is disgustingly heart-warming. Alright, adult, thank you for that. #Kid_smile
+            ~KidAffinity++
+            ->AfterKidAffinity
+            *****Coz I'm a dumbass. 
+            Agent X: (Laugh out loud) That's so funny! You are nothing like the adults around me. I love you.
+            ~KidAffinity=KidAffinity+2
+            ->AfterKidAffinity
+        ***Nope, that's all.
+        Agent X: Alright. You are the adult. You have the say.#Kid_sad
+        ->AfterKidAffinity
+    **Errr, that's so embarrassing.
+    Agent X: Alright. You are right. #Kid_sad
+    ->AfterKidAffinity
+
+*I know everything about you, little one, what should I ask?#Class:Blue
+Agent X: I bet you never know at least one thing.I have not told anyone.#Teen_default
+(You searched in your memory, trying to find anything that you felt to be important yet never shared with anyone.)#Class:Purple
+Agent X: Do you know why Bernard is an evil dyrad?
+(You really don't know that. You remember Bernard as a generic and remote concept, a symbolic item that signifies your childhood. Everyone might have such a symbolic memory - a doll, a pet, or a friend. You cannot remember the exact occurrences, but you treat them as a collection of reminiscences.)#Class:Purple 
+What do you hide from me?#Class:Blue
+Agent X: If I tell you, a secret counts no more. #Kid_smile
+(A rare period of silence. Agent X shuts her mouth tight, as if keeping a confidential info that might threaten her supernatural institution. You know you will never know the story of Bernard. One day, you will forget the name Bernard. When that happens, you won’t even notice what else has disappeared with it )#Class:Purple
+
+->AfterKidAffinity
+
+=AfterKidAffinity
+(It is already 11PM. You have to go back to work. You are left with two days to new year, and your progress is really worrying.)
+*Kid, listen, I have to go back to work.
+Agent X: Can't you just spend more time with me?#Kid_sad
+I can't, I'm already spending longer than I supposed to be. 
+Agent X: Would you answer my last question?
+*Sure.
+Agent X: What does it mean to grow up?
+    **Growing up means 
+->Day3
+*{Sadness==0}Tell me more about Bernard.
+Agent X: Bernard is our 
+
+
+->Day3
 
 
 
 
+
+=AfterWork
+(You worked for the whole evening until 2AM. Things go really smoothly. You believe you can complete everything by the beginning of new year.)#Class:Purple
+(It's been a long time since you last have a dream. You dream of someone calling you but you never respond.)#type_animation
+(Another dream almost come to your memory. That was you at the age of six, just before you go to primary school. You were so worried about the upcoming life.)#type_animation
+(While excited about your chance to escape from here, you are also scared that one day you will be resigned to the fate as a village girl, get married early, continuing the life of your grandparents, your parents, and pass the same life to your daughter or son.)#type_animation
+(You said so many "Hello" in that dream, yet only your own voice echos in darkness.)#type_animation
+(You once believed that there is another self that can guide you through all difficulties. In your childhood years, you have been calling her for so many times: You arranged games for the two of you, hide in the tree hole, anticipating that one day you will be found.)#type_animation
+(But no. Nothing happened. Your imaginary elder self, your friend, has never looked back to her past.)#type_animation
+(It was that night you realized: You have to grow up from those useless imaginations. You are all alone.)#type_animation
+~Dream--
+->Day3
+
+=Day3
 
 I have been in the Light City for 15 years since my secondary school. #type_animation
 I took a train here: upon alighting, I was struck by the darkness in this old railway station. #type_animation
