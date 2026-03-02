@@ -243,7 +243,7 @@ public class OpeningSceneManager : MonoBehaviour
     {
         Debug.Log("Start button clicked - load menu scene");
         //load menu scene
-        // UnityEngine.SceneManagement.SceneManager.LoadScene("MenuScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
 
     }
 }
