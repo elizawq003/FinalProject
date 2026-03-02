@@ -32,16 +32,30 @@ public class OpeningSceneManager : MonoBehaviour
     // dimmed previous lines
     [SerializeField] private Color dimColor = new Color(0.78f, 0.78f, 0.78f, 0.45f);
 
+    //audio setup
+    [SerializeField] private AudioClip typeSFX;
+    [SerializeField] [Range(0f, 1f)] private float typeVolume = 0.3f;
+    [SerializeField] [Range(0.8f, 1.2f)] private float pitchMin = 0.9f;
+    [SerializeField] [Range(0.8f, 1.2f)] private float pitchMax = 1.1f;
+    // play sound every N characters
+    [SerializeField] [Range(1, 6)] private int playSoundEveryNChars = 3;
 
     private Story inkStory;
     private List<TextMeshProUGUI> spawnedLines = new List<TextMeshProUGUI>();
     private CanvasGroup dialogCanvasGroup;
+    private AudioSource audioSource;
+    private bool canPlayTypeSound = true;
 
     private void Awake()
     {
         startButton.onClick.AddListener(OnStartClicked);
         //title panel is hidden at start
         titlePanel.SetActive(false);
+
+        // Setup audio source for typing SFX
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
 
         //Add CanvasGroup to dialog panel for fading
         dialogCanvasGroup = dialogPanel.GetComponent<CanvasGroup>();
@@ -133,6 +147,9 @@ public class OpeningSceneManager : MonoBehaviour
         }
 
         // Dialog complete, transition to title
+        //stop audio
+        canPlayTypeSound = false;
+        audioSource.Stop();
         yield return new WaitForSeconds(1.5f);
         yield return StartCoroutine(TransitionToTitle());
     }
@@ -151,16 +168,34 @@ public class OpeningSceneManager : MonoBehaviour
     private IEnumerator TypewriteText(TextMeshProUGUI textComponent, string fullText, Color color)
     {
         string cursor = "<color=#5BFF5B>▌</color>";
+        int charsSinceLastSound = 0;
+
+
         for (int i = 0; i <= fullText.Length; i++)
         {
             // Show typed text + blinking cursor
             string visibleText = fullText.Substring(0, i);
             textComponent.text = visibleText + cursor;
+
+            // Play typing sound (skip spaces for a natural rhythm)
+            if (i < fullText.Length && fullText[i] != ' ' && typeSFX != null && canPlayTypeSound)
+            {
+                charsSinceLastSound++;
+                if(charsSinceLastSound >= playSoundEveryNChars)
+                {
+                    audioSource.pitch = Random.Range(pitchMin, pitchMax);
+                    audioSource.PlayOneShot(typeSFX, typeVolume);
+                    charsSinceLastSound = 0;
+                }
+
+            }
+
             yield return new WaitForSeconds(typeSpeed);
         }
         // Remove cursor, show final text
         textComponent.text = fullText;
     }
+
 
     //Fades out dialog, fades in title + start button.
     private IEnumerator TransitionToTitle()

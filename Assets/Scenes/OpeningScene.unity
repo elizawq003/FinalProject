@@ -1351,6 +1351,11 @@ MonoBehaviour:
   defaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
   blueColor: {r: 0.36, g: 0.61, b: 0.84, a: 1}
   dimColor: {r: 0.78, g: 0.78, b: 0.78, a: 0.45}
+  typeSFX: {fileID: 8300000, guid: d960c43b97f384d92bba2864ab743670, type: 3}
+  typeVolume: 0.3
+  pitchMin: 0.9
+  pitchMax: 1.1
+  playSoundEveryNChars: 6
 --- !u!4 &2038901691
 Transform:
   m_ObjectHideFlags: 0
