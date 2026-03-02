@@ -437,7 +437,7 @@ Agent X: If I tell you, a secret counts no more. #Kid_smile
 Agent X: Can't you just spend more time with me?#Kid_sad
 I can't, I'm already spending longer than I supposed to be. 
 Agent X: Would you answer my last question?
-*Sure.
+
 Agent X: What does it mean to grow up?
     **Growing up means 
 ->Day3
