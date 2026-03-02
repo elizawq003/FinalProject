@@ -12,6 +12,7 @@ public class OpeningSceneManager : MonoBehaviour
 
     [SerializeField] private RectTransform dialogPanel;
     [SerializeField] private GameObject titlePanel;
+    [SerializeField] private Image titleImage;
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private Button startButton;
     [SerializeField] private CanvasGroup titleCanvasGroup;
