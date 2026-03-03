@@ -410,7 +410,7 @@ Agent X: Hoho, Bernard is so kind that he willingly accepted the character assig
             ~KidAffinity++
             ->AfterKidAffinity
             *****Coz I'm a dumbass. 
-            Agent X: (Laugh out loud) That's so funny! You are nothing like the adults around me. I love you.
+            Agent X: (Laugh out loud) That's so funny! You are nothing like the adults around me. I like you.
             ~KidAffinity=KidAffinity+2
             ->AfterKidAffinity
         ***Nope, that's all.
@@ -439,15 +439,46 @@ I can't, I'm already spending longer than I supposed to be.
 Agent X: Would you answer my last question?
 
 Agent X: What does it mean to grow up?
-    **Growing up means 
+    Growing up means taking on responsibilities, and giving up on unrealistic ideals.
+    Agent X: I'm going to school tomorrow.#Kid_default
+    ***What does that mean?
+    Agent X: Does that mean I will grow up?#Kid_sad
+    **** Life is far longer than you think.
+    Agent X: How long will it take to grow up?
+    (You really don't know how to answer. It feels like your life has been stagnant for all this while. You are not sure if you are in your ultimate stage of growth, or you are stuck somewhere before that growth really happens.)#Class:Purple
+    ->KidAffinityReach
+    **** Yes, it's a beginning of your growth.
+    (To you, growth is a process, growing up is a spectrum. Perhaps a beginning happens even earlier than her first day in school. It might have happened since the moment the question is asked.)#Class:Purple
+    ->KidAffinityReach
+    ***You are prepared, believe in yourself.
+    (This is just a useless encouragement. A white lie. Only you know how tough it was for a village girl.)
+    ->KidAffinityReach
+
+    
+
+=KidAffinityReach
+Agent X: Will we meet again? Do you have anything else to say to me?#Teen_default
+*Best of luck. I will go back to work.
+->AfterWork
+*{KidAffinity>3} I want to ask you a question.
+    (You still remember that first day. In River Ville, parents do not have any awareness for pre-education. Basically you just go to school like a blank piece of paper. )#Class:Purple
+    (There is a shuttle between River Ville and Rock Town. Every day you need to take that bus at 5:30AM, and reach school at 7:00AM for flag-raising ceremony.)#Class:Purple
+    (This was a facility provided by the town to support the underdeveloped River Ville. Luckily you have Patty back then, life wasn't that hard.)
+    (But you somehow find something missing deep in your heart. Like a missing jigsaw piece that does not really affect the full pattern.)#Class:Purple
+    What is the first thing you want to do after you go to school and study things new?#Class:Blue
+    (She remains silent with contemplation. After a while, she speaks with a sense of seriousness.)#Class:Purple#Teen_default
+Agent X: I want to write out the stories between me and Bernard, as a record of our friendship, before he loses me or I loses him.#Teen_smile
+Agent X: Oh, Bernard is calling me. Byebye!
+(She left without any burden, as if she will see you tomorrow. )
+(Yes, a story. She wanted to write a story. And that notebook was confiscated during class when she was doodling herself hiding in the tree hole."Be realistic!" Teacher said in a harsh tone.)#Class:Purple
+(That was the last story she wrote, and Bernard was dead soon after she stopped writing. He was really an old tree with fragile structure, at the age of 30, you can tell it was natural. But Agent X couldn't. She thought it was her fault.)#Class:Purple
+**It is all over. I need to move on.
+->AfterWork
+**Perhaps, as an adult, I can help her recollect that dream.
+You made up your mind. Engineer might be part of your identity, but it fails to define you. A germ that was once inhibitted bud in a new winter after 24 years. Spring will come, and you will start something new in your life, or to reencounter your past.
+~Dream=Dream+3
+~DOS=DOS+2
 ->Day3
-*{Sadness==0}Tell me more about Bernard.
-Agent X: Bernard is our 
-
-
-->Day3
-
-
 
 
 
