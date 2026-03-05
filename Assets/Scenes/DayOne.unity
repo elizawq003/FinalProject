@@ -1113,9 +1113,9 @@ MonoBehaviour:
   purpleColor: {r: 0.7, g: 0.5, b: 0.85, a: 1}
   teenDefault: {fileID: 21300000, guid: 8e84b62cc2d2a4625a9d77e56203231f, type: 3}
   teenSmile: {fileID: 21300000, guid: 4be0f17cd00294d7c9a77d923f6e0374, type: 3}
-  teenSpeechless: {fileID: 21300000, guid: ff876ceef809c4319b09c0f6a0173f32, type: 3}
-  teenSad: {fileID: 21300000, guid: 13b0a011325254a9aa41113a8171f87e, type: 3}
-  teenAnger: {fileID: 21300000, guid: 7faf7e2dd45a04d25bc417a11a5e664d, type: 3}
+  teenSpeechless: {fileID: 21300000, guid: e5c8f60a9583745fbaef58bbd15f9f88, type: 3}
+  teenSad: {fileID: 21300000, guid: ff876ceef809c4319b09c0f6a0173f32, type: 3}
+  teenAnger: {fileID: 21300000, guid: 13b0a011325254a9aa41113a8171f87e, type: 3}
   typewriterSpeed: 0.03
 --- !u!1 &486765925
 GameObject:
