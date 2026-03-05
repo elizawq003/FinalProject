@@ -39,19 +39,19 @@ public class DayOneManager : MonoBehaviour
     [SerializeField] private Sprite teenSad;
     [SerializeField] private Sprite teenAnger;
 
-    
-    //[SerializeField] private Image backgroundImage;
+    /*
+    [SerializeField] private Image backgroundImage;
     [SerializeField] private Sprite bgRoom1;
     [SerializeField] private Sprite bgRoom2;
     [SerializeField] private Sprite bgCityLight;
     [SerializeField] private Sprite bgStarryNight;
-    //[SerializeField] private Sprite bgPhoneInterface;
-    
+    [SerializeField] private Sprite bgPhoneInterface;
+    */
 
     [SerializeField] private float typewriterSpeed = 0.03f;
 
     private Dictionary<string, Sprite> portraitMap;
-    private Dictionary<string, Sprite> pictureMap;
+    //private Dictionary<string, Sprite> pictureMap;
 
 
     // Start is called before the first frame update
@@ -67,16 +67,17 @@ public class DayOneManager : MonoBehaviour
             { "Teen_angry", teenAnger },
         };
 
-        
+        /*
         pictureMap = new Dictionary<string, Sprite>
         {
             { "Picture_Room1", bgRoom1 },
             { "Picture_Room2", bgRoom2 },
             { "Picture_CityLight", bgCityLight },
             { "Picture:StarryNight", bgStarryNight },
-            //{ "Picture:PhoneInterfacewithWords", bgPhoneInterface },
+            { "Picture:PhoneInterfacewithWords", bgPhoneInterface },
         };
-        
+        */
+
 
         InitializeInk();
         // Connect emotion bars
