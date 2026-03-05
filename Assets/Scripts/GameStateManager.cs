@@ -6,6 +6,10 @@ public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
 
+    // Tracks which day the player is on (1, 2, or 3)
+    public int CurrentDay = 1;
+
+
     // Ending variables
     public int Dream;
     public int Achievement;
@@ -54,6 +58,10 @@ public class GameStateManager : MonoBehaviour
         TeenAffinity = (int)story.variablesState["TeenAffinity"];
         AdultAffinity = (int)story.variablesState["AdultAffinity"];
         KidAffinity = (int)story.variablesState["KidAffinity"];
+
+        // Advance to next day
+        CurrentDay++;
+        Debug.Log($"Day complete. Next day: {CurrentDay}");
     }
 
     // Call at START of Day 2/3 to inject carried-over values.
@@ -70,7 +78,22 @@ public class GameStateManager : MonoBehaviour
         story.variablesState["TeenAffinity"] = TeenAffinity;
         story.variablesState["AdultAffinity"] = AdultAffinity;
         story.variablesState["KidAffinity"] = KidAffinity;
+
+
     }
+
+    // Returns the scene name for the current day.
+    public string GetCurrentDayScene()
+    {
+        switch (CurrentDay)
+        {
+            case 1: return "DayOne";
+            case 2: return "DayTwo";
+            case 3: return "DayThree";
+            default: return "Ending";
+        }
+    }
+
 
     // Determines the final ending. Call after Day 3.
     public string DetermineEnding()
