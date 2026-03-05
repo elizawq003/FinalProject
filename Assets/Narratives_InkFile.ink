@@ -304,7 +304,7 @@ Maggie: Oh, thanks for your reminder. I'll do that!#Teen_smile
 *"For a better life." You mumbled.#Class:Blue
 (As if your achieving in life all this while. You set your goal, follow your plans step by step, and you will attain it one day, just a matter of time.)#Class:Purple
 (You will sleep at 2:00AM tonight as you always do. Tomorrow you will wake up at 7:30AM to catch the shuttle to your office. If you complete this feature on time, you will be freed from that unnecessary commitment of attendance, and you will  wake up at 10:00AM each day if there is nothing urgent.)#Class:Purple
-(That's why you are always working so hard, from teenage years till now. It is 28 Dec, 3 days to new year. You still have ample time to work.)
+(That's why you are always working so hard, from teenage years till now. It is 29 Dec, 3 days to new year. You still have ample time to work.)
 ~Stability=Stability+2
 
 ->Day2
@@ -331,7 +331,7 @@ Look up.#Class:Blue #Teen_default
 (Everything including time has paused. You immerse in the darkness, feeling like home.)#Class:Purple 
 (You cannot exactly remember the outcome of that chemistry test. And standing at this point of time, everything that once mattered doesn't matter to you anyway.)#Class:Purple
 (What about your work? You try to imagine yourself at the age of 40. Will you regret for not fixing that error on time, which defers your promotion at every step; or you will regret for not looking up to the starry sky that night?)#Class:Purple
-(Everything has returned to darkness and solitude. In that stagnant silence, you have a faint glimpse of your calendar: it is 28 Dec.)#Class:Purple 
+(Everything has returned to darkness and solitude. In that stagnant silence, you have a faint glimpse of your calendar: it is 29 Dec.)#Class:Purple 
 (You still have three days to report to your boss, and that determines whether you are able to secure the earliest round of merit-based promotion next year.) #Class:Purple
 (However, a sudden ideal struck you in your mind: is there anything more important, more compelling to decide apart from work?)#Class:Purple
 (You have a vague sense of it, but you know you will still turn on your laptop shortly, work until 2AM, and get up at 7:30AM to catch the office shuttle tomorrow.)#Class:Purple
@@ -470,7 +470,7 @@ Agent X: Will we meet again? Do you have anything else to say to me?#Teen_defaul
     (She remains silent with contemplation. After a while, she speaks with a sense of seriousness.)#Class:Purple#Teen_default
 Agent X: I want to write out the stories between me and Bernard, as a record of our friendship, before he loses me or I loses him.#Teen_smile
 Agent X: Oh, Bernard is calling me. Byebye!
-(She left without any burden, as if she will see you tomorrow. )
+(She left, as if she will see you tomorrow. )
 (Yes, a story. She wanted to write a story. And that notebook was confiscated during class when she was doodling herself hiding in the tree hole."Be realistic!" Teacher said in a harsh tone.)#Class:Purple
 (That was the last story she wrote, and Bernard was dead soon after she stopped writing. He was really an old tree with fragile structure, at the age of 30, you can tell it was natural. But Agent X couldn't. She thought it was her fault.)#Class:Purple
 **It is all over. I need to move on.
@@ -485,34 +485,56 @@ You made up your mind. Engineer might be part of your identity, but it fails to 
 
 =AfterWork
 (You worked for the whole evening until 2AM. Things go really smoothly. You believe you can complete everything by the beginning of new year.)#Class:Purple
-(It's been a long time since you last have a dream. You dream of someone calling you but you never respond.)#type_animation
-(Another dream almost come to your memory. That was you at the age of six, just before you go to primary school. You were so worried about the upcoming life.)#type_animation
-(While excited about your chance to escape from here, you are also scared that one day you will be resigned to the fate as a village girl, get married early, continuing the life of your grandparents, your parents, and pass the same life to your daughter or son.)#type_animation
-(You said so many "Hello" in that dream, yet only your own voice echos in darkness.)#type_animation
-(You once believed that there is another self that can guide you through all difficulties. In your childhood years, you have been calling her for so many times: You arranged games for the two of you, hide in the tree hole, anticipating that one day you will be found.)#type_animation
-(But no. Nothing happened. Your imaginary elder self, your friend, has never looked back to her past.)#type_animation
-(It was that night you realized: You have to grow up from those useless imaginations. You are all alone.)#type_animation
+It's been a long time since you last have a dream. You dream of someone calling your name but you never respond.#type_animation
+Another dream almost come to your memory. That was you at the age of six, just before you go to primary school. You were so worried about the upcoming life.#type_animation
+While excited about your chance to escape from here, you are also scared that one day you will be resigned to the fate as a village girl, get married early, continuing the life of your grandparents, your parents, and pass the same life to your daughter or son.#type_animation
+You said so many "Hello" in that dream, yet only your own voice echos in darkness.#type_animation
+You once believed that there is another self that can guide you through all difficulties. In your childhood years, you have been calling her for so many times: You arranged games for the two of you, hide in the tree hole, anticipating that one day you will be found.#type_animation
+But no. Nothing happened. Your imaginary elder self, your friend, has never looked back to her past.#type_animation
+It was that night you realized: You have to grow up from those useless imaginations. You are all alone.#type_animation
 ~Dream--
 ->Day3
 
-=Day3
+===Day3===
+It is the New Year's eve, two hours later, it will be a new day and a new year. #type_animation
+You worked for the whole day for that final sprint, and just with one single click, the bug at train station will be fixed and the city will be fully lit up with the new year's bells.#type_animation
+The system will record your operation - done before 12AM, it's counted as yours. Promotion, migration, fortune, achievement, everything you dreamt of, what you came to Light City for, will belong to you.#type_animation
+This is how you persuade yourself. But you hesitated. You can't tell the reason. You have pushed that change to the system for thousands of times. It's just one step there. Why not press the button?#type_animation
+Nevermind. Get yourself a drink and a snack first. Have some music - Press the button might be a good choice given the circumstances. You still have two hours left. #type_animation
 
-I have been in the Light City for 15 years since my secondary school. #type_animation
-I took a train here: upon alighting, I was struck by the darkness in this old railway station. #type_animation
-Sitting on a bench beside the track, immersing myself in that silent piece of summer night,#type_animation
-I waited until the next train comes.#type_animation
+->Menu3
+=Menu3
+->AfterDay3Selection
+
+=AfterDay3Selection
+??:Hey, we finally meet each other.
+What's up?#Class:Blue
+(Her figure renders on your screen. You see her tied hair, her badge, and her confident posture. This is how she shows herself. She is you.)#Class:Purple
+Margaret.#Class:Blue
+(Calling yourself with your own name gives a sense of strange intimacy. It seems that you own a name in every stage of your life: Agent X, Maggie, Professional Engineer Dr Grey, but you are seldomly addressed as Margaret.)#Class:Purple
+(And it's a name that get along with you for the longest time in life.)#Class:Purple
+Margaret:Towards the end of year, how are you feeling?#Adult_default
+(She asks as if she knows nothing about you, or you indeed know minimal about yourself. )#Adult_default #Class:Purple
+(Your history is like a Ship of Theseus, from that little River Ville to Light City, from your humble family to a teenager that comes to big city alone, from a wild girl to a professional engineer - Here and there, now and then.） #Adult_default#Class:Purple
+(Time, space, identity...Everything is mixed. You are always positioning youself in vicissitudes, after all these reconstructions, are you still the self that you perceive to be?)#Adult_default#Class:Purple
+That's a hard question to answer. Mixed feelings, perhaps. #Class:Blue
+Margaret: Or a more detailed question, any New Year resolution or plans? After the full coverage of light, the next government initiative is to achieve the constant temperature zone - and follow-up activities such as pest control led by comfortable constant temperature.#Adult_default
+Margaret: The Star City previously implemented genetic engineering to female mosquitos and effectively annihilated this species in the premise, such that the spread of dengue can be controlled. 
+Margaret: I heard that this technology is in the midst of promotion in the country along with the constant temperature thingy, and Light City, the most developed city in the north, will be the first experimental region.#Adult_default
+Which means that we will never have winter after then?
+Margaret: Yes, but I thought you hate winter the most? You often complain about those bulky clothes and boots that make you feel like a seal crawling on the ground.#Adult_smile
+*Oh ya, you are right. 
+->EliminateWinter
+*Complaints do not necessarily mean I hate winter. 
+->ReserveWinter
+
+=EliminateWinter
+
+
+=ReserveWinter
+
+
+
 -> END
 
--> END
 
-
-  -> END
-
-
-
-
- * There were two choices.
- * There were four lines of content.
-
-- They lived happily ever after.
-    -> END
