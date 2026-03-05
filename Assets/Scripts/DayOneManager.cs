@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using TMPro;
 using Ink.Runtime;
+using UnityEngine.Video;
 
 
 public class DayOneManager : MonoBehaviour
@@ -39,20 +40,29 @@ public class DayOneManager : MonoBehaviour
     [SerializeField] private Sprite teenSad;
     [SerializeField] private Sprite teenAnger;
 
-    /*
+
     [SerializeField] private Image backgroundImage;
-    [SerializeField] private Sprite bgRoom1;
+    //[SerializeField] private Sprite bgRoom1;
+
+    
+
+    // RawImage on the Canvas that displays the video
+    [SerializeField] private RawImage videoRawImage;
+    // VideoPlayer component 
+    [SerializeField] private VideoPlayer videoPlayer;
+
+    [SerializeField] private VideoClip bgRoom1Video;
     [SerializeField] private Sprite bgRoom2;
     [SerializeField] private Sprite bgCityLight;
     [SerializeField] private Sprite bgStarryNight;
-    [SerializeField] private Sprite bgPhoneInterface;
-    */
+    //[SerializeField] private Sprite bgPhoneInterface;
+    
 
     [SerializeField] private float typewriterSpeed = 0.03f;
 
     private Dictionary<string, Sprite> portraitMap;
-    //private Dictionary<string, Sprite> pictureMap;
-
+    private Dictionary<string, Sprite> pictureMap;
+    private HashSet<string> videoTags;
 
     // Start is called before the first frame update
     void Start()
@@ -67,16 +77,25 @@ public class DayOneManager : MonoBehaviour
             { "Teen_angry", teenAnger },
         };
 
-        /*
+        
         pictureMap = new Dictionary<string, Sprite>
         {
-            { "Picture_Room1", bgRoom1 },
+            //{ "Picture_Room1", bgRoom1 },
             { "Picture_Room2", bgRoom2 },
             { "Picture_CityLight", bgCityLight },
             { "Picture:StarryNight", bgStarryNight },
-            { "Picture:PhoneInterfacewithWords", bgPhoneInterface },
+            //{ "Picture:PhoneInterfacewithWords", bgPhoneInterface },
         };
-        */
+
+        videoTags = new HashSet<string>
+        {
+            "Picture_Room1",
+        };
+
+        // Hide video layer at start
+        if (videoRawImage != null)
+            videoRawImage.gameObject.SetActive(false);
+
 
 
         InitializeInk();
@@ -111,6 +130,46 @@ public class DayOneManager : MonoBehaviour
         inkStory.ChoosePathString("Start");
         
     }
+
+    //Switches to a sprite background. Stops any playing video.
+    private void ShowSpriteBackground(Sprite sprite)
+    {
+        // Stop video and hide video layer
+        if (videoPlayer != null && videoPlayer.isPlaying)
+            videoPlayer.Stop();
+        if (videoRawImage != null)
+            videoRawImage.gameObject.SetActive(false);
+
+        // Show sprite background
+        if (backgroundImage != null)
+        {
+            backgroundImage.gameObject.SetActive(true);
+            backgroundImage.sprite = sprite;
+        }
+    }
+
+    //Plays a video background. Hides the sprite background.
+    private void ShowVideoBackground(VideoClip clip)
+    {
+        if (videoPlayer == null || videoRawImage == null) return;
+
+        // Create a RenderTexture if we don't have one yet
+        if (videoPlayer.targetTexture == null)
+        {
+            RenderTexture rt = new RenderTexture(1920, 1080, 0);
+            videoPlayer.targetTexture = rt;
+            videoRawImage.texture = rt;
+        }
+
+        // Show video layer on top
+        videoRawImage.gameObject.SetActive(true);
+
+        videoPlayer.clip = clip;
+        videoPlayer.isLooping = true;
+        videoPlayer.Play();
+    }
+
+
     private IEnumerator PlayDialogSequence()
     {
         // Loop continuously until the story ends or we change scenes
@@ -162,13 +221,19 @@ public class DayOneManager : MonoBehaviour
                         characterPortrait.gameObject.SetActive(true);
                         hasPortraitTag = true;
                     }
-                    /*
+                    
                     // Picture / CG tags
+                    else if (videoTags.Contains(t))
+                    {
+                        if (t == "Picture_Room1")
+                            ShowVideoBackground(bgRoom1Video);
+                    }
+                    // Sprite background tags
                     else if (pictureMap.ContainsKey(t))
                     {
-                        backgroundImage.sprite = pictureMap[t];
+                        ShowSpriteBackground(pictureMap[t]);
                     }
-                    */
+
                 }
 
                 // --- PARSE SPEAKER NAME ---
