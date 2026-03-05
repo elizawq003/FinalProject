@@ -19,7 +19,10 @@ public class MainMenuManager : MonoBehaviour
         {
             GameObject go = new GameObject("GameStateManager");
             go.AddComponent<GameStateManager>();
+
+            
         }
+        Debug.Log($"MainMenu loaded. CurrentDay = {GameStateManager.Instance.CurrentDay}");
 
         UpdateUI();
 
