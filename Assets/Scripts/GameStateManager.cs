@@ -123,4 +123,24 @@ public class GameStateManager : MonoBehaviour
         return names[bestIndex];
     }
 
+    // for reloading
+    public void ResetAll()
+    {
+        CurrentDay = 1;
+        Dream = 0;
+        Achievement = 0;
+        Stability = 0;
+        Friend = 0;
+        DOL = 0;
+        DOR = 0;
+        DOT = 0;
+        DOS = 0;
+        TeenAffinity = 0;
+        AdultAffinity = 0;
+        KidAffinity = 0;
+        Dessert = "";
+        Song = "";
+        Drink = "";
+    }
+
 }
