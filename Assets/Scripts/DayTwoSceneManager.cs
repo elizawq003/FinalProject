@@ -44,6 +44,7 @@ public class DayTwoSceneManager : MonoBehaviour
     [SerializeField] private Transform choicesPanel;
     [SerializeField] private GameObject choiceButtonPrefab;
     [SerializeField] private Image characterPortrait;
+    [SerializeField] private EmotionBarController emotionBar;
 
     [SerializeField] private Color defaultColor = new Color(0.78f, 0.78f, 0.78f, 1f);
     [SerializeField] private Color blueColor = new Color(0.36f, 0.61f, 0.84f, 1f);
@@ -125,10 +126,13 @@ public class DayTwoSceneManager : MonoBehaviour
 
         InitializeInk();
 
-        // Connect emotion bars
-        EmotionBarController emotionBar = FindObjectOfType<EmotionBarController>();
+        // Will initialize after transition.
+         // Connect emotion bars
+         /*
+         EmotionBarController emotionBar = FindObjectOfType<EmotionBarController>();
         if (emotionBar != null)
             emotionBar.Initialize(inkStory);
+         */
 
         StartCoroutine(PlayFullSequence());
 
@@ -150,6 +154,8 @@ public class DayTwoSceneManager : MonoBehaviour
         });
 
         // Debug observers
+        inkStory.ObserveVariable("TeenAffinity", (string n, object v) =>
+        Debug.Log($"TeenAffinity = {v}"));
         inkStory.ObserveVariable("KidAffinity", (string n, object v) =>
             Debug.Log($"KidAffinity = {v}"));
         inkStory.ObserveVariable("Dream", (string n, object v) =>
@@ -160,6 +166,16 @@ public class DayTwoSceneManager : MonoBehaviour
             Debug.Log($"Stability = {v}"));
         inkStory.ObserveVariable("Friend", (string n, object v) =>
             Debug.Log($"Friend = {v}"));
+        inkStory.ObserveVariable("DOL", (string n, object v) =>
+            Debug.Log($"DOL = {v}"));
+        inkStory.ObserveVariable("DOS", (string n, object v) =>
+            Debug.Log($"DOS = {v}"));
+        inkStory.ObserveVariable("DOT", (string n, object v) =>
+        Debug.Log($"DOT = {v}"));
+        inkStory.ObserveVariable("DOR", (string n, object v) =>
+            Debug.Log($"DOR = {v}"));
+
+        Debug.Log("All Day 2 observers registered.");
 
         // Start at Day2 knot
         inkStory.ChoosePathString("Day2");
@@ -291,6 +307,9 @@ public class DayTwoSceneManager : MonoBehaviour
 
         // Show dialog canvas
         dialogCanvas.SetActive(true);
+
+        if (emotionBar != null)
+            emotionBar.Initialize(inkStory);
     }
 
     // PHASE 2 — NORMAL DIALOG

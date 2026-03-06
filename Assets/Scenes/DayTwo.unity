@@ -289,6 +289,7 @@ MonoBehaviour:
   choicesPanel: {fileID: 1193591786}
   choiceButtonPrefab: {fileID: 2622940826391646716, guid: 5679e37e63fdf4f06bd7b9cd66469971, type: 3}
   characterPortrait: {fileID: 1193591785}
+  emotionBar: {fileID: 1996640237}
   defaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
   blueColor: {r: 0.36, g: 0.61, b: 0.84, a: 1}
   purpleColor: {r: 0.7, g: 0.5, b: 0.85, a: 1}
@@ -919,6 +920,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1996640237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4289631823784081321, guid: 2b4f460587e7244b9a823f4b094a72f5, type: 3}
+  m_PrefabInstance: {fileID: 1193591780}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80897721bf614fb68e6262b970f57c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
