@@ -529,9 +529,13 @@ Margaret: Yes, but I thought you hate winter the most? You often complain about 
 ->ReserveWinter
 
 =EliminateWinter
+// TODO: Add narrative content here
+-> END
 
 
 =ReserveWinter
+// TODO: Add narrative content here
+-> END
 
 
 
