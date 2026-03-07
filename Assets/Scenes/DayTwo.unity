@@ -211,6 +211,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6556910925488812645, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
+      propertyPath: m_Spacing
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556910925488812645, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
       propertyPath: m_Padding.m_Top
       value: 150
       objectReference: {fileID: 0}
@@ -230,16 +234,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogPanel
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6556910925488812645, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6724516951825386752, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 367472248}
   m_SourcePrefab: {fileID: 100100000, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
 --- !u!224 &367472246 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 247466656456072165, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
   m_PrefabInstance: {fileID: 367472245}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &367472247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6724516951825386752, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
+  m_PrefabInstance: {fileID: 367472245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &367472248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367472247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 50
+    m_Right: 50
+    m_Top: 150
+    m_Bottom: 150
+  m_ChildAlignment: 0
+  m_Spacing: 14
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &391932028
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,14 +314,9 @@ MonoBehaviour:
   dialogLinePrefab: {fileID: 4478256565839830980, guid: 0cdc968a3ae7c4946a51defdb00b3278, type: 3}
   openingTypeSpeed: 0.04
   pauseBetweenLines: 0.8
-  openingFadeOutDuration: 1
+  openingFadeOutDuration: 0
   openingDefaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
   openingDimColor: {r: 0.78, g: 0.78, b: 0.78, a: 0.45}
-  typeSFX: {fileID: 8300000, guid: d960c43b97f384d92bba2864ab743670, type: 3}
-  typeVolume: 0.3
-  pitchMin: 0.9
-  pitchMax: 1.1
-  playSoundEveryNChars: 6
   dialogCanvas: {fileID: 1193591781}
   dialogText: {fileID: 1193591788}
   speakerNameText: {fileID: 1193591787}

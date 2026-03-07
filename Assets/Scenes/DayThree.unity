@@ -219,7 +219,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -271,17 +271,12 @@ MonoBehaviour:
   inkJSONAsset: {fileID: 4900000, guid: 0f7bc7d7dfe684744ad628f9fa8c133e, type: 3}
   openingCanvas: {fileID: 41980461}
   openingDialogPanel: {fileID: 1297497011}
-  dialogLinePrefab: {fileID: 4478256565839830980, guid: 0cdc968a3ae7c4946a51defdb00b3278, type: 3}
+  dialogLinePrefab: {fileID: 9113564618080478743, guid: 35e32370ad84544549bf8758e88cda31, type: 3}
   openingTypeSpeed: 0.04
   pauseBetweenLines: 0.8
-  openingFadeOutDuration: 1
+  openingFadeOutDuration: 0
   openingDefaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
   openingDimColor: {r: 0.78, g: 0.78, b: 0.78, a: 0.45}
-  typeSFX: {fileID: 8300000, guid: d960c43b97f384d92bba2864ab743670, type: 3}
-  typeVolume: 0.3
-  pitchMin: 0.9
-  pitchMax: 1.1
-  playSoundEveryNChars: 6
   dialogCanvas: {fileID: 968712059}
   dialogText: {fileID: 968712058}
   speakerNameText: {fileID: 968712057}
@@ -751,8 +746,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6556910925488812645, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
+      propertyPath: m_Spacing
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6556910925488812645, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
       propertyPath: m_Padding.m_Top
-      value: 150
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6556910925488812645, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
       propertyPath: m_Padding.m_Left
@@ -764,7 +763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556910925488812645, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
       propertyPath: m_Padding.m_Bottom
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6724516951825386752, guid: 6c9b57fb4b2004b3a92109bc0c20747d, type: 3}
       propertyPath: m_Name

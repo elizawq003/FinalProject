@@ -25,12 +25,13 @@ public class DayThreeSceneManager : MonoBehaviour
     [SerializeField] private Color openingDefaultColor = new Color(0.78f, 0.78f, 0.78f, 1f);
     [SerializeField] private Color openingDimColor = new Color(0.78f, 0.78f, 0.78f, 0.45f);
 
+    /*
     [SerializeField] private AudioClip typeSFX;
     [SerializeField] [Range(0f, 1f)] private float typeVolume = 0.3f;
     [SerializeField] [Range(0.8f, 1.2f)] private float pitchMin = 0.9f;
     [SerializeField] [Range(0.8f, 1.2f)] private float pitchMax = 1.1f;
     [SerializeField] [Range(1, 6)] private int playSoundEveryNChars = 3;
-
+    */
 
     // NORMAL DIALOG UI
     [SerializeField] private GameObject dialogCanvas;
@@ -88,7 +89,7 @@ public class DayThreeSceneManager : MonoBehaviour
     private bool isWaitingForChoice = false;
     private bool isTyping = false;
     private bool isInOpeningPhase = true;
-    private bool canPlayTypeSound = true;
+    //private bool canPlayTypeSound = true;
     private bool reachedEnding = false;
     private string endingName = "";
 
@@ -145,10 +146,10 @@ public class DayThreeSceneManager : MonoBehaviour
         if (videoRawImage != null)
             videoRawImage.gameObject.SetActive(false);
 
-        
+        /*
         sfxAudioSource = gameObject.AddComponent<AudioSource>();
         sfxAudioSource.playOnAwake = false;
-        
+        */
 
         openingCanvasGroup = openingCanvas.GetComponent<CanvasGroup>();
         if (openingCanvasGroup == null)
@@ -258,8 +259,8 @@ public class DayThreeSceneManager : MonoBehaviour
             yield return new WaitForSeconds(pauseBetweenLines);
         }
 
-        canPlayTypeSound = false;
-        sfxAudioSource.Stop();
+        //canPlayTypeSound = false;
+        //sfxAudioSource.Stop();
     }
 
     private TextMeshProUGUI SpawnOpeningLine(Color color)
@@ -275,13 +276,14 @@ public class DayThreeSceneManager : MonoBehaviour
     private IEnumerator TypewriteOpeningText(TextMeshProUGUI textComponent, string fullText, Color color)
     {
         string cursor = "<color=#5BFF5B>▌</color>";
-        int charsSinceLastSound = 0;
+        //int charsSinceLastSound = 0;
 
         for (int i = 0; i <= fullText.Length; i++)
         {
             string visibleText = fullText.Substring(0, i);
             textComponent.text = visibleText + cursor;
 
+            /*
             if (i < fullText.Length && fullText[i] != ' ' && typeSFX != null && canPlayTypeSound)
             {
                 charsSinceLastSound++;
@@ -291,7 +293,7 @@ public class DayThreeSceneManager : MonoBehaviour
                     sfxAudioSource.PlayOneShot(typeSFX, typeVolume);
                     charsSinceLastSound = 0;
                 }
-            }
+            }*/
 
             yield return new WaitForSeconds(openingTypeSpeed);
         }

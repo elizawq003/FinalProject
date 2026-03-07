@@ -30,12 +30,14 @@ public class DayTwoSceneManager : MonoBehaviour
 
 
     //audio setup
+    /*
     [SerializeField] private AudioClip typeSFX;
     [SerializeField] [Range(0f, 1f)] private float typeVolume = 0.3f;
     [SerializeField] [Range(0.8f, 1.2f)] private float pitchMin = 0.9f;
     [SerializeField] [Range(0.8f, 1.2f)] private float pitchMax = 1.1f;
     // play sound every N characters
     [SerializeField] [Range(1, 6)] private int playSoundEveryNChars = 3;
+    */
 
     //day 2 dialog canvas
     [SerializeField] private GameObject dialogCanvas;
@@ -73,7 +75,7 @@ public class DayTwoSceneManager : MonoBehaviour
     private bool isWaitingForChoice = false;
     private bool isTyping = false;
     private bool isInOpeningPhase = true;
-    private bool canPlayTypeSound = true;
+    //private bool canPlayTypeSound = true;
 
     private Dictionary<string, Sprite> portraitMap;
     private Dictionary<string, Sprite> pictureMap;
@@ -112,8 +114,10 @@ public class DayTwoSceneManager : MonoBehaviour
             videoRawImage.gameObject.SetActive(false);
 
         // Setup audio source for opening typing SFX
+        /*
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
+        */
 
         // Setup canvas group on opening canvas for fading
         openingCanvasGroup = openingCanvas.GetComponent<CanvasGroup>();
@@ -244,8 +248,8 @@ public class DayTwoSceneManager : MonoBehaviour
         }
 
         // Stop typing audio
-        canPlayTypeSound = false;
-        audioSource.Stop();
+        //canPlayTypeSound = false;
+        //audioSource.Stop();
     }
 
     // Stores a line consumed during opening that belongs to normal dialog
@@ -265,13 +269,14 @@ public class DayTwoSceneManager : MonoBehaviour
     private IEnumerator TypewriteOpeningText(TextMeshProUGUI textComponent, string fullText, Color color)
     {
         string cursor = "<color=#5BFF5B>▌</color>";
-        int charsSinceLastSound = 0;
+        //int charsSinceLastSound = 0;
 
         for (int i = 0; i <= fullText.Length; i++)
         {
             string visibleText = fullText.Substring(0, i);
             textComponent.text = visibleText + cursor;
 
+            /*
             if (i < fullText.Length && fullText[i] != ' ' && typeSFX != null && canPlayTypeSound)
             {
                 charsSinceLastSound++;
@@ -281,7 +286,9 @@ public class DayTwoSceneManager : MonoBehaviour
                     audioSource.PlayOneShot(typeSFX, typeVolume);
                     charsSinceLastSound = 0;
                 }
-            }
+            
+            }*/
+
 
             yield return new WaitForSeconds(openingTypeSpeed);
         }
