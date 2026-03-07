@@ -345,18 +345,7 @@ public class DayThreeSceneManager : MonoBehaviour
                 string line = inkStory.Continue().Trim();
                 List<string> tags = inkStory.currentTags;
 
-                // --- ENDING CHECK ---
-                // Check if we've entered any Ending knot
-                if (inkStory.state.currentPathString != null &&
-                    CheckForEnding(inkStory.state.currentPathString))
-                {
-                    // We're in an ending — sync variables and load ending scene
-                    GameStateManager.Instance.SyncFromInk(inkStory);
-                    GameStateManager.Instance.EndingReached = endingName;
-                    Debug.Log($"=== Ending reached: {endingName} — loading Ending scene ===");
-                    SceneManager.LoadScene("Ending");
-                    yield break;
-                }
+                
 
                 if (string.IsNullOrEmpty(line)) continue;
 
@@ -411,22 +400,7 @@ public class DayThreeSceneManager : MonoBehaviour
         }
     }
 
-    // Checks if the current path is an Ending knot.
-    private bool CheckForEnding(string path)
-    {
-        string[] endingKnots = {
-            "Ending0", "Ending1", "Ending2", "Ending3",
-            "Ending4", "Ending5", "Ending6",
-            "EsterEgg1", "EsterEgg2"
-        };
-
-        foreach (string knot in endingKnots)
-        {
-            if (path.StartsWith(knot))
-                return true;
-        }
-        return false;
-    }
+    
 
     // Processes music and picture tags from the ending title line and stores them in GameStateManager for the ending scene.
     private void ProcessEndingTags(List<string> tags)

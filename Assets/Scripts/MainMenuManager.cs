@@ -10,6 +10,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dayText;
     [SerializeField] private UnityEngine.UI.Button startDayButton;
     [SerializeField] private TextMeshProUGUI buttonText;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class MainMenuManager : MonoBehaviour
         UpdateUI();
 
         startDayButton.onClick.AddListener(OnStartDayClicked);
+    
 
     }
 
@@ -39,6 +41,7 @@ public class MainMenuManager : MonoBehaviour
             dayText.text = "Day " + day;
             buttonText.text = "Start Day " + day;
             startDayButton.interactable = true;
+            
         }
         else
         {
@@ -46,6 +49,8 @@ public class MainMenuManager : MonoBehaviour
             dayText.text = "Journey Complete";
             buttonText.text = "View Ending";
             startDayButton.interactable = true;
+           
+
         }
 
     }
@@ -55,4 +60,6 @@ public class MainMenuManager : MonoBehaviour
         string sceneName = GameStateManager.Instance.GetCurrentDayScene();
         SceneManager.LoadScene(sceneName);
     }
+
+   
 }

@@ -616,6 +616,7 @@ You definitely have given up something in order to stand here - but you made it.
 ->END
 }
 
+->END
 
 ===Ending2===
 Preserve the Night#EndingTitle#Picture:StarrySky#Music:Recession

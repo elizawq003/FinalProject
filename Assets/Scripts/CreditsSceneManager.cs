@@ -17,6 +17,6 @@ public class CreditsSceneManager : MonoBehaviour
     {
         GameStateManager.Instance.ResetAll();
         SaveManager.DeleteSave();
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("OpeningScene");
     }
 }
