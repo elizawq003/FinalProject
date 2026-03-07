@@ -10,6 +10,7 @@ using UnityEngine.Video;
 
 public class DayTwoSceneManager : MonoBehaviour
 {
+    [SerializeField] private SavePanelController savePanelController;
 
     [SerializeField] private TextAsset inkJSONAsset;
 
@@ -347,7 +348,7 @@ public class DayTwoSceneManager : MonoBehaviour
                 {
                     Debug.Log("=== Reached Day 3 — returning to Main Menu ===");
                     GameStateManager.Instance.SyncFromInk(inkStory);
-                    SceneManager.LoadScene("MainMenu");
+                    savePanelController.ShowSavePanel();
                     yield break;
                 }
 
@@ -370,7 +371,7 @@ public class DayTwoSceneManager : MonoBehaviour
             {
                 Debug.Log("End of story reached — returning to Main Menu.");
                 GameStateManager.Instance.SyncFromInk(inkStory);
-                SceneManager.LoadScene("MainMenu");
+                savePanelController.ShowSavePanel();
                 yield break;
             }
         }

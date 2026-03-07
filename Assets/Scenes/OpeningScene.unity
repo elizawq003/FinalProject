@@ -1309,6 +1309,7 @@ MonoBehaviour:
   titleImage: {fileID: 2031937821}
   titleText: {fileID: 1546258877}
   startButton: {fileID: 931130661}
+  loadButton: {fileID: 1650888639}
   titleCanvasGroup: {fileID: 174548720}
   dialogLinePrefab: {fileID: 4478256565839830980, guid: 0cdc968a3ae7c4946a51defdb00b3278, type: 3}
   typeSpeed: 0.04
