@@ -9,41 +9,44 @@ using Ink.Runtime;
 public class EndingSceneManager : MonoBehaviour
 {
 
-    [SerializeField] private TextMeshProUGUI endingTitleText;
-    [SerializeField] private RectTransform dialogPanel;
+    //dialog panel
+    [SerializeField] private GameObject dialogPanel;
+    [SerializeField] private RectTransform dialogContent;
     [SerializeField] private GameObject dialogLinePrefab;
-    [SerializeField] private UnityEngine.UI.Button NextButton;
-    [SerializeField] private TextMeshProUGUI nextButtonText;
 
-    
-    [SerializeField] private Image backgroundImage;
-
-  
-    //[SerializeField] private Sprite bgDesertedStation;
-    //[SerializeField] private Sprite bgPromotion;
-    [SerializeField] private Sprite bgStarrySky;
-    [SerializeField] private Sprite bgCityLight;
-    //[SerializeField] private Sprite bgTraveller;
-    //[SerializeField] private Sprite bgFriend;
-    //[SerializeField] private Sprite bgWork;
-    //[SerializeField] private Sprite bgRoom;
-    //[SerializeField] private Sprite bgStation;
-
-  
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private AudioClip musicRecession;
-    //[SerializeField] private AudioClip musicPressTheButton;
-    [SerializeField] private AudioClip musicTrip;
-    //[SerializeField] private AudioClip musicIntrovertInTheParty;
-
-    
     [SerializeField] private float typeSpeed = 0.04f;
     [SerializeField] private float pauseBetweenLines = 1.0f;
 
-    [Header("Colors")]
     [SerializeField] private Color defaultColor = new Color(0.78f, 0.78f, 0.78f, 1f);
     [SerializeField] private Color dimColor = new Color(0.78f, 0.78f, 0.78f, 0.45f);
 
+
+    //ending panel
+    [SerializeField] private GameObject endingPanel;
+    [SerializeField] private TextMeshProUGUI endingTitleText;
+    [SerializeField] private Image backgroundImage;
+    [SerializeField] private UnityEngine.UI.Button nextButton;
+    [SerializeField] private TextMeshProUGUI nextButtonText;
+
+    //background
+    [SerializeField] private Sprite bgDesertedStation;
+    [SerializeField] private Sprite bgPromotion;
+    [SerializeField] private Sprite bgStarrySky;
+    [SerializeField] private Sprite bgCityLight;
+    [SerializeField] private Sprite bgTraveller;
+    [SerializeField] private Sprite bgFriend;
+    [SerializeField] private Sprite bgWork;
+    [SerializeField] private Sprite bgRoom;
+    [SerializeField] private Sprite bgStation;
+
+    //music
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioClip musicRecession;
+    [SerializeField] private AudioClip musicPressTheButton;
+    [SerializeField] private AudioClip musicTrip;
+    [SerializeField] private AudioClip musicIntrovertInTheParty;
+
+  
    /*
     [SerializeField] private AudioClip typeSFX;
     [SerializeField] [Range(0f, 1f)] private float typeVolume = 0.3f;
@@ -51,6 +54,7 @@ public class EndingSceneManager : MonoBehaviour
     [SerializeField] [Range(0.8f, 1.2f)] private float pitchMax = 1.1f;
     [SerializeField] [Range(1, 6)] private int playSoundEveryNChars = 3;
    */
+
     private Story inkStory;
     private List<TextMeshProUGUI> spawnedLines = new List<TextMeshProUGUI>();
     //private AudioSource sfxAudioSource;
@@ -59,48 +63,50 @@ public class EndingSceneManager : MonoBehaviour
     private Dictionary<string, Sprite> pictureMap;
     private Dictionary<string, AudioClip> musicMap;
 
+    private CanvasGroup dialogCanvasGroup;
+    private CanvasGroup endingCanvasGroup;
+
     void Start()
     {
         pictureMap = new Dictionary<string, Sprite>
         {
-           // { "Picture:DesertedStation", bgDesertedStation },
-           // { "Picture:Promotion", bgPromotion },
+            { "Picture:DesertedStation", bgDesertedStation },
+           { "Picture:Promotion", bgPromotion },
             { "Picture:StarrySky", bgStarrySky },
             { "Picture:CityLight", bgCityLight },
-           // { "Picture:Traveller", bgTraveller },
-           // { "Picture:Friend", bgFriend },
-          //  { "Picture:Work", bgWork },
-           // { "Picture:Room", bgRoom },
-           // { "Picture:Station", bgStation },
+           { "Picture:Traveller", bgTraveller },
+           { "Picture:Friend", bgFriend },
+          { "Picture:Work", bgWork },
+           { "Picture:Room", bgRoom },
+            { "Picture:Station", bgStation },
         };
 
         musicMap = new Dictionary<string, AudioClip>
         {
             { "Music:Recession", musicRecession },
-           // { "Music:PressTheButton", musicPressTheButton },
+            { "Music:PressTheButton", musicPressTheButton },
             { "Music:Trip", musicTrip },
-            //{ "Music:IntrovertInTheParty", musicIntrovertInTheParty },
+            { "Music:IntrovertInTheParty", musicIntrovertInTheParty },
         };
 
         //sfxAudioSource = gameObject.AddComponent<AudioSource>();
         //sfxAudioSource.playOnAwake = false;
 
-        // Hide replay button until ending finishes
-        NextButton.gameObject.SetActive(false);
-        NextButton.onClick.AddListener(OnReplayClicked);
+        dialogCanvasGroup = dialogPanel.GetComponent<CanvasGroup>();
+        if (dialogCanvasGroup == null)
+            dialogCanvasGroup = dialogPanel.AddComponent<CanvasGroup>();
 
-        // Display the ending title
-        string title = GameStateManager.Instance.EndingReached;
-        endingTitleText.text = title;
-        Debug.Log($"Ending Scene loaded: {title}");
+        endingCanvasGroup = endingPanel.GetComponent<CanvasGroup>();
+        if (endingCanvasGroup == null)
+            endingCanvasGroup = endingPanel.AddComponent<CanvasGroup>();
 
-        // Set initial background from stored tag
-        string picTag = GameStateManager.Instance.EndingPicture;
-        if (!string.IsNullOrEmpty(picTag) && pictureMap.ContainsKey(picTag))
-        {
-            backgroundImage.sprite = pictureMap[picTag];
-        }
+        // Phase 1 visible, Phase 2 hidden
+        dialogPanel.SetActive(true);
+        endingPanel.SetActive(false);
+        nextButton.gameObject.SetActive(false);
+        nextButton.onClick.AddListener(OnNextClicked);
 
+        // Start music immediately when reach ending scene
         // Play music from stored tag
         string musTag = GameStateManager.Instance.EndingMusic;
         if (!string.IsNullOrEmpty(musTag) && musicMap.ContainsKey(musTag))
@@ -109,6 +115,21 @@ public class EndingSceneManager : MonoBehaviour
             musicSource.loop = true;
             musicSource.Play();
         }
+
+        // Set ending title and background for Phase 2
+        endingTitleText.text = GameStateManager.Instance.EndingReached;
+
+        
+
+        // Set initial background from stored tag
+        string picTag = GameStateManager.Instance.EndingPicture;
+        if (!string.IsNullOrEmpty(picTag) && pictureMap.ContainsKey(picTag))
+        {
+            backgroundImage.sprite = pictureMap[picTag];
+        }
+
+        Debug.Log($"Ending Scene loaded: {GameStateManager.Instance.EndingReached}");
+
 
         // Restore Ink story from saved state and continue
         RestoreAndPlayEnding();
@@ -122,7 +143,8 @@ public class EndingSceneManager : MonoBehaviour
         if (string.IsNullOrEmpty(jsonText) || string.IsNullOrEmpty(storyState))
         {
             Debug.LogError("No story state saved. Cannot play ending.");
-            NextButton.gameObject.SetActive(true);
+            // Skip to ending panel directly
+            StartCoroutine(TransitionToEndingPanel());
             return;
         }
 
@@ -134,12 +156,22 @@ public class EndingSceneManager : MonoBehaviour
 
         inkStory.state.LoadJson(storyState);
 
-        StartCoroutine(PlayEndingSequence());
+        StartCoroutine(PlayFullSequence());
     }
 
-    private IEnumerator PlayEndingSequence()
+    private IEnumerator PlayFullSequence()
     {
-        // Small delay before starting
+     
+        yield return StartCoroutine(PlayEndingText());
+
+
+       
+        yield return StartCoroutine(TransitionToEndingPanel());
+    }
+
+    // PHASE 1 — TYPEWRITER TEXT
+    private IEnumerator PlayEndingText()
+    {
         yield return new WaitForSeconds(1.0f);
 
         while (inkStory.canContinue)
@@ -149,7 +181,7 @@ public class EndingSceneManager : MonoBehaviour
 
             if (string.IsNullOrEmpty(line)) continue;
 
-            // Skip the title line (already displayed)
+            // Skip the title line (will be shown in Phase 2)
             bool isEndingTitle = false;
             foreach (string tag in tags)
             {
@@ -157,7 +189,8 @@ public class EndingSceneManager : MonoBehaviour
             }
             if (isEndingTitle) continue;
 
-            // Process tags for background and music changes mid-ending
+            // Process tags for background changes mid-ending
+            // (updates the background that Phase 2 will show)
             foreach (string tag in tags)
             {
                 string t = tag.Trim();
@@ -186,19 +219,11 @@ public class EndingSceneManager : MonoBehaviour
             yield return StartCoroutine(TypewriteText(newLine, line));
             yield return new WaitForSeconds(pauseBetweenLines);
         }
-
-        // Ending complete — show replay button
-        //canPlayTypeSound = false;
-        //sfxAudioSource.Stop();
-
-        yield return new WaitForSeconds(2.0f);
-        NextButton.gameObject.SetActive(true);
-        nextButtonText.text = "Next";
     }
 
     private TextMeshProUGUI SpawnLine(Color color)
     {
-        GameObject lineObj = Instantiate(dialogLinePrefab, dialogPanel);
+        GameObject lineObj = Instantiate(dialogLinePrefab, dialogContent);
         TextMeshProUGUI tmp = lineObj.GetComponent<TextMeshProUGUI>();
         tmp.text = "";
         tmp.color = color;
@@ -206,33 +231,33 @@ public class EndingSceneManager : MonoBehaviour
         return tmp;
     }
 
+
     private IEnumerator TypewriteText(TextMeshProUGUI textComponent, string fullText)
     {
         string cursor = "<color=#5BFF5B>▌</color>";
-        int charsSinceLastSound = 0;
 
         for (int i = 0; i <= fullText.Length; i++)
         {
             string visibleText = fullText.Substring(0, i);
             textComponent.text = visibleText + cursor;
-            /*
-            if (i < fullText.Length && fullText[i] != ' ' && typeSFX != null && canPlayTypeSound)
-            {
-                charsSinceLastSound++;
-                if (charsSinceLastSound >= playSoundEveryNChars)
-                {
-                    sfxAudioSource.pitch = Random.Range(pitchMin, pitchMax);
-                    sfxAudioSource.PlayOneShot(typeSFX, typeVolume);
-                    charsSinceLastSound = 0;
-                }
-            }*/
-
             yield return new WaitForSeconds(typeSpeed);
         }
 
         textComponent.text = fullText;
+
     }
 
+    private IEnumerator TransitionToEndingPanel()
+    {
+        dialogPanel.SetActive(false);
+        endingPanel.SetActive(true);
+        nextButton.gameObject.SetActive(true);
+        nextButtonText.text = "Next";
+        yield return null;
+    }
+
+
+    // HELPERS
     private IEnumerator FadeTextColor(TextMeshProUGUI text, Color targetColor, float duration)
     {
         Color startColor = text.color;
@@ -246,9 +271,8 @@ public class EndingSceneManager : MonoBehaviour
         text.color = targetColor;
     }
 
-    private void OnReplayClicked()
+    private void OnNextClicked()
     {
-        //GameStateManager.Instance.ResetAll();
         SceneManager.LoadScene("Credits");
     }
 }
