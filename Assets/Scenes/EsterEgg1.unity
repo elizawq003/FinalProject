@@ -350,6 +350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7277553653090749896, guid: 2b4f460587e7244b9a823f4b094a72f5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f07d39746e28b0744844666ccffa87e3, type: 3}
     - target: {fileID: 7623445813684211405, guid: 2b4f460587e7244b9a823f4b094a72f5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -531,7 +535,7 @@ MonoBehaviour:
   defaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
   blueColor: {r: 0.36, g: 0.61, b: 0.84, a: 1}
   purpleColor: {r: 0.7, g: 0.5, b: 0.85, a: 1}
-  catSprite: {fileID: 0}
+  catSprite: {fileID: 21300000, guid: 7cbd4e8ba9fa43742a2711a7cec31d8b, type: 3}
 --- !u!4 &556282173
 Transform:
   m_ObjectHideFlags: 0

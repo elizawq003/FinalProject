@@ -177,7 +177,7 @@ MonoBehaviour:
     m_Top: 40
     m_Bottom: 30
   m_ChildAlignment: 0
-  m_Spacing: 14
+  m_Spacing: 20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -490,65 +490,20 @@ MonoBehaviour:
   backgroundImage: {fileID: 1945542655}
   nextButton: {fileID: 1107556789}
   nextButtonText: {fileID: 2016278532}
-  bgDesertedStation: {fileID: 0}
-  bgPromotion: {fileID: 21300000, guid: 68d7bea5e8e64495c85f6bb2d1d78dfd, type: 3}
+  bgDesertedStation: {fileID: 21300000, guid: 233051006daecd948ac8d6ec3e1864c3, type: 3}
+  bgPromotion: {fileID: 21300000, guid: 75684fc7b01c4ef46a6df1339ed471d1, type: 3}
   bgStarrySky: {fileID: 21300000, guid: 8137df880e812457fae51fcbc6db2b14, type: 3}
   bgCityLight: {fileID: 21300000, guid: d5ba5320ce85a0f49b125fa912124fb4, type: 3}
-  bgTraveller: {fileID: 21300000, guid: 5263e5d8080ff431aa9f6b1fdd1fb34c, type: 3}
-  bgFriend: {fileID: 21300000, guid: b732cac7dbaf44b33a1dcaa529e00201, type: 3}
-  bgWork: {fileID: 21300000, guid: 57e26aef1c148474aabec87d801efbae, type: 3}
+  bgTraveller: {fileID: 21300000, guid: 0952cb73287b58e4484264e899d31a70, type: 3}
+  bgFriend: {fileID: 21300000, guid: 0783a7b133b615e41a2e3791b6d60861, type: 3}
+  bgWork: {fileID: 21300000, guid: c4b4f5aae453f614e9bfbcaec91ce304, type: 3}
   bgRoom: {fileID: 21300000, guid: 7d21e11fb071d5d4280a0ade0d3e321c, type: 3}
-  bgStation: {fileID: 21300000, guid: 104302cc02dd04c61b7f49b71478016d, type: 3}
+  bgStation: {fileID: 21300000, guid: 233051006daecd948ac8d6ec3e1864c3, type: 3}
   musicSource: {fileID: 193538916}
   musicRecession: {fileID: 8300000, guid: c03723da51de4403a928563ab044d6f6, type: 3}
   musicPressTheButton: {fileID: 8300000, guid: d7002b515fce54eb5b9d1a86379d50a9, type: 3}
   musicTrip: {fileID: 8300000, guid: 5e8421a178fc34bc5ade2ec63fb60496, type: 3}
   musicIntrovertInTheParty: {fileID: 8300000, guid: b4152c39ac8464596a5e1e6337c1d79d, type: 3}
---- !u!1 &381988594
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 381988596}
-  - component: {fileID: 381988595}
-  m_Layer: 0
-  m_Name: Testing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &381988595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381988594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bceaaea3619f84647a9c84e4e6a7a4a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inkJSONAsset: {fileID: 4900000, guid: 0f7bc7d7dfe684744ad628f9fa8c133e, type: 3}
---- !u!4 &381988596
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381988594}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 230.03314, y: 248.04892, z: -5.30151}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &505847596
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +645,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107556785}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1367,4 +1322,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 505847599}
   - {fileID: 1620933035}
-  - {fileID: 381988596}
