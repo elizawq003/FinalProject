@@ -276,7 +276,7 @@ MonoBehaviour:
     m_Top: 300
     m_Bottom: 100
   m_ChildAlignment: 0
-  m_Spacing: 14
+  m_Spacing: 6
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -333,9 +333,9 @@ MonoBehaviour:
   defaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
   blueColor: {r: 0.36, g: 0.61, b: 0.84, a: 1}
   purpleColor: {r: 0.7, g: 0.5, b: 0.85, a: 1}
-  kidDefault: {fileID: 21300000, guid: 2d9c184f44f054fc2b3216fd94d1bfa1, type: 3}
-  kidSmile: {fileID: 21300000, guid: e6ed1aa2270574edea5be3d9cf64ca3e, type: 3}
-  kidSad: {fileID: 21300000, guid: 2591a4170be4e437b8e8836796cfdf91, type: 3}
+  kidDefault: {fileID: 21300000, guid: 190470eeb89947c40ac5a7a9187c9fa0, type: 3}
+  kidSmile: {fileID: 21300000, guid: d924aacc1bab5394d85e234e6eacec68, type: 3}
+  kidSad: {fileID: 21300000, guid: 01508184527219145b762ba018dd53cf, type: 3}
   backgroundImage: {fileID: 1193591784}
   videoRawImage: {fileID: 1193591783}
   videoPlayer: {fileID: 1193591782}
