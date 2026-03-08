@@ -9,7 +9,7 @@ public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dayText;
     [SerializeField] private UnityEngine.UI.Button startDayButton;
-    [SerializeField] private TextMeshProUGUI buttonText;
+    //[SerializeField] private TextMeshProUGUI buttonText;
     
 
     // Start is called before the first frame update
@@ -39,7 +39,7 @@ public class MainMenuManager : MonoBehaviour
         if (day <= 3)
         {
             dayText.text = "Day " + day;
-            buttonText.text = "Start Day " + day;
+            //buttonText.text = "Start Day " + day;
             startDayButton.interactable = true;
             
         }
@@ -47,7 +47,7 @@ public class MainMenuManager : MonoBehaviour
         {
             // All 3 days complete — go to ending
             dayText.text = "Journey Complete";
-            buttonText.text = "View Ending";
+            //buttonText.text = "View Ending";
             startDayButton.interactable = true;
            
 
