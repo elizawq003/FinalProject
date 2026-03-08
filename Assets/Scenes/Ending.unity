@@ -471,11 +471,20 @@ MonoBehaviour:
   NextButton: {fileID: 1107556789}
   nextButtonText: {fileID: 2016278532}
   backgroundImage: {fileID: 1945542655}
+  bgDesertedStation: {fileID: 0}
+  bgPromotion: {fileID: 21300000, guid: 68d7bea5e8e64495c85f6bb2d1d78dfd, type: 3}
   bgStarrySky: {fileID: 21300000, guid: 8137df880e812457fae51fcbc6db2b14, type: 3}
   bgCityLight: {fileID: 21300000, guid: d5ba5320ce85a0f49b125fa912124fb4, type: 3}
+  bgTraveller: {fileID: 21300000, guid: 5263e5d8080ff431aa9f6b1fdd1fb34c, type: 3}
+  bgFriend: {fileID: 21300000, guid: b732cac7dbaf44b33a1dcaa529e00201, type: 3}
+  bgWork: {fileID: 21300000, guid: 57e26aef1c148474aabec87d801efbae, type: 3}
+  bgRoom: {fileID: 21300000, guid: 7d21e11fb071d5d4280a0ade0d3e321c, type: 3}
+  bgStation: {fileID: 21300000, guid: 104302cc02dd04c61b7f49b71478016d, type: 3}
   musicSource: {fileID: 193538916}
   musicRecession: {fileID: 8300000, guid: c03723da51de4403a928563ab044d6f6, type: 3}
+  musicPressTheButton: {fileID: 8300000, guid: d7002b515fce54eb5b9d1a86379d50a9, type: 3}
   musicTrip: {fileID: 8300000, guid: 5e8421a178fc34bc5ade2ec63fb60496, type: 3}
+  musicIntrovertInTheParty: {fileID: 8300000, guid: b4152c39ac8464596a5e1e6337c1d79d, type: 3}
   typeSpeed: 0.04
   pauseBetweenLines: 1
   defaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}

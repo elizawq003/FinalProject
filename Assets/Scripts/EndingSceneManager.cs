@@ -19,22 +19,22 @@ public class EndingSceneManager : MonoBehaviour
     [SerializeField] private Image backgroundImage;
 
   
-    //[SerializeField] private Sprite bgDesertedStation;
-    //[SerializeField] private Sprite bgPromotion;
+    [SerializeField] private Sprite bgDesertedStation;
+    [SerializeField] private Sprite bgPromotion;
     [SerializeField] private Sprite bgStarrySky;
     [SerializeField] private Sprite bgCityLight;
-    //[SerializeField] private Sprite bgTraveller;
-    //[SerializeField] private Sprite bgFriend;
-    //[SerializeField] private Sprite bgWork;
-    //[SerializeField] private Sprite bgRoom;
-    //[SerializeField] private Sprite bgStation;
+    [SerializeField] private Sprite bgTraveller;
+    [SerializeField] private Sprite bgFriend;
+    [SerializeField] private Sprite bgWork;
+    [SerializeField] private Sprite bgRoom;
+    [SerializeField] private Sprite bgStation;
 
   
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioClip musicRecession;
-    //[SerializeField] private AudioClip musicPressTheButton;
+    [SerializeField] private AudioClip musicPressTheButton;
     [SerializeField] private AudioClip musicTrip;
-    //[SerializeField] private AudioClip musicIntrovertInTheParty;
+    [SerializeField] private AudioClip musicIntrovertInTheParty;
 
     
     [SerializeField] private float typeSpeed = 0.04f;
@@ -63,23 +63,23 @@ public class EndingSceneManager : MonoBehaviour
     {
         pictureMap = new Dictionary<string, Sprite>
         {
-           // { "Picture:DesertedStation", bgDesertedStation },
-           // { "Picture:Promotion", bgPromotion },
+            { "Picture:DesertedStation", bgDesertedStation },
+           { "Picture:Promotion", bgPromotion },
             { "Picture:StarrySky", bgStarrySky },
             { "Picture:CityLight", bgCityLight },
-           // { "Picture:Traveller", bgTraveller },
-           // { "Picture:Friend", bgFriend },
-          //  { "Picture:Work", bgWork },
-           // { "Picture:Room", bgRoom },
-           // { "Picture:Station", bgStation },
+           { "Picture:Traveller", bgTraveller },
+           { "Picture:Friend", bgFriend },
+          { "Picture:Work", bgWork },
+           { "Picture:Room", bgRoom },
+            { "Picture:Station", bgStation },
         };
 
         musicMap = new Dictionary<string, AudioClip>
         {
             { "Music:Recession", musicRecession },
-           // { "Music:PressTheButton", musicPressTheButton },
+            { "Music:PressTheButton", musicPressTheButton },
             { "Music:Trip", musicTrip },
-            //{ "Music:IntrovertInTheParty", musicIntrovertInTheParty },
+            { "Music:IntrovertInTheParty", musicIntrovertInTheParty },
         };
 
         //sfxAudioSource = gameObject.AddComponent<AudioSource>();
@@ -209,7 +209,7 @@ public class EndingSceneManager : MonoBehaviour
     private IEnumerator TypewriteText(TextMeshProUGUI textComponent, string fullText)
     {
         string cursor = "<color=#5BFF5B>▌</color>";
-        int charsSinceLastSound = 0;
+        //int charsSinceLastSound = 0;
 
         for (int i = 0; i <= fullText.Length; i++)
         {
