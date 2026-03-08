@@ -15,6 +15,7 @@ public class OpeningSceneManager : MonoBehaviour
     [SerializeField] private Image titleImage;
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private Button startButton;
+    [SerializeField] private UnityEngine.UI.Button loadButton;
     [SerializeField] private CanvasGroup titleCanvasGroup;
 
     [SerializeField] private GameObject dialogLinePrefab;
@@ -50,6 +51,12 @@ public class OpeningSceneManager : MonoBehaviour
     private void Awake()
     {
         startButton.onClick.AddListener(OnStartClicked);
+        loadButton.onClick.AddListener(OnLoadClicked);
+
+        // Only show load button if a save exists
+        loadButton.gameObject.SetActive(SaveManager.HasSave());
+
+
         //title panel is hidden at start
         titlePanel.SetActive(false);
 
@@ -246,5 +253,18 @@ public class OpeningSceneManager : MonoBehaviour
         //load menu scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
 
+    }
+
+    private void OnLoadClicked()
+    {
+        // Create GameStateManager if it doesn't exist
+        if (GameStateManager.Instance == null)
+        {
+            GameObject go = new GameObject("GameStateManager");
+            go.AddComponent<GameStateManager>();
+        }
+
+        SaveManager.Load();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 }

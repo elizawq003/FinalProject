@@ -32,6 +32,14 @@ public class GameStateManager : MonoBehaviour
     public string Song;
     public string Drink;
 
+    // Ending scene data — set by DayThreeManager before loading Ending scene
+    public string EndingReached = "";
+    public string EndingMusic = "";
+    public string EndingPicture = "";
+    public string EndingStoryState = "";
+    public string InkJSONText = "";
+
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -59,7 +67,6 @@ public class GameStateManager : MonoBehaviour
         AdultAffinity = (int)story.variablesState["AdultAffinity"];
         KidAffinity = (int)story.variablesState["KidAffinity"];
 
-        // Advance to next day
         CurrentDay++;
         Debug.Log($"Day complete. Next day: {CurrentDay}");
     }
@@ -110,7 +117,6 @@ public class GameStateManager : MonoBehaviour
                 bestIndex = i;
         }
 
-
         if (names[bestIndex] == "Dream")
         {
             if (maxDream == DOL) return "Dream of Light";
@@ -121,6 +127,31 @@ public class GameStateManager : MonoBehaviour
         }
 
         return names[bestIndex];
+    }
+
+    // for reloading
+    public void ResetAll()
+    {
+        CurrentDay = 1;
+        Dream = 0;
+        Achievement = 0;
+        Stability = 0;
+        Friend = 0;
+        DOL = 0;
+        DOR = 0;
+        DOT = 0;
+        DOS = 0;
+        TeenAffinity = 0;
+        AdultAffinity = 0;
+        KidAffinity = 0;
+        Dessert = "";
+        Song = "";
+        Drink = "";
+        EndingReached = "";
+        EndingMusic = "";
+        EndingPicture = "";
+        EndingStoryState = "";
+        InkJSONText = "";
     }
 
 }
