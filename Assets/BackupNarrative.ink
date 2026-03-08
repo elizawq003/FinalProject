@@ -103,7 +103,8 @@ Maggie: Anyways, how are you? #Teen_default
 It's the third time you are asking this question.#Class:Blue
 Maggie: And NEVER get a proper answer. As a 15-year-old teenager I'm really curious about my future life.#Teen_default
 I have told you, you want me to repeat? I'm a light engineer...#Class:Blue
-Maggie: Urgggg not this one. I want to know about your LIFE. Come home alone, grab that instant noodle and a 10PM cup of coffee, play a sound track that almost explodes my brain. Is that your life?#Teen_speechless
+Maggie: Urgggg not this one. I want to know about your LIFE. #Teen_speechless
+Maggie: Come home alone, grab that instant noodle and a 10PM cup of coffee, play a sound track that almost explodes my brain. Is that your life?#Teen_speechless
 Not everyday, there's an emergency. The area under me encounters a bug and I need to resolve it before the new year's deadline. #Teen_default
 This will affect our year-end assessment as a department, and I'm unfortunately on the year-end call. #Class:Blue#Teen_default
 My boss is really pushing hard. So I have to stay up to monitor and fix the real time issues. #Class:Blue#Teen_default
@@ -171,7 +172,8 @@ Maybe the benefits need me more than I need them.#Teen_default
 {Repulsion==0&&Sadness==0:
 Maggie: You sound excited. Does the vision of success excite you that much?#Teen_smile
 * Yes! I'm super happy when thinking about what I can do with the higher pay.#Class:Blue #Teen_default
-I may rent a single person apartment in Star City, facing the river and see the starry city on the other side. That's exactly the life I'm looking for. That's my goal of this everlasting migration - to find a home of my own.#Class:Blue #Teen_default
+I may rent a single person apartment in Star City, facing the river and see the starry city on the other side. #Class:Blue #Teen_default
+That's exactly the life I'm looking for. That's my goal of this everlasting migration - to find a home of my own.#Class:Blue #Teen_default
 ~Achievement++
 ->Benefits
 * Of course! Star City has the most advanced technology. #Class:Blue #Teen_default
@@ -211,19 +213,21 @@ Maggie: What's the outcome?#Teen_smile
 =Benefits
 Maggie: Another exchange program... We are always exchanging, physically and culturally.#Teen_sad
 I can never forget the day you received a call about your successful application for a sponsored exchange to Light City.#Class:Blue #Teen_sad 
-They called in multiple times when you were watching a movie with Patty. You guys took out all pocket money to buy yourselves one reckless day., and those phone calls came in such a frustrating way during the movie.#Class:Blue #Teen_sad 
-You pushed that hang-up button hard to punish it for interrupting the movie. It went silent. After that two hours, you received the call again, answered "Yes" to the offer, and burst into tears in Patty's embrace.#Class:Blue #Teen_sad 
+They called in multiple times when you were watching a movie with Patty. You guys took out all pocket money to buy yourselves one reckless day, and those phone calls came in such a frustrating way during the movie.#Class:Blue #Teen_sad 
+You pushed that hang-up button hard to punish it for interrupting the movie. It went silent.#Class:Blue #Teen_sad 
+After that two hours, you received the call again, answered "Yes" to the offer, and burst into tears in Patty's embrace.#Class:Blue #Teen_sad 
 Maggie: From my perspective, that was the most courageous moment in my life. How do you view it after 15 years?#Teen_smile 
 (Chuckling) Courageous, what a word. Bold choice, I would say. You only thought you knew what you were stepping into.#Class:Blue #Teen_default
 Maggie: Light City has a very different rhythm from River Ville. Back home, you were outstanding. In Light City, you were simply… one of many. And I truly miss Patty.#Teen_sad
 {Sadness==3:
 (Nostalgia settles quietly, like household lights slowly claiming the dark. You have not thought about Patty in a long time, but at that moment, you see her pimpled face and that typical smile with braces. )#Class:Purple #Teen_default
-(Her dark eyes meet yours. You recognize that loneliness.#Class:Purple #Teen_default
+(Her dark eyes meet yours. You recognize that loneliness.)#Class:Purple #Teen_default
 (It is the same one that used to stare back at you in the boarding school hostel.)#Class:Purple #Teen_default
 I almost forgot her face and what we have been through. I've grown so used to being alone.#Class:Blue #Teen_default
 Maggie:You should go back and contact her some day. Now I cannot really call her that much, she's studying at a high school known for its strict, militarized discipline, so she really has limited access to her phone.#Teen_default
 Maggie: Whenever the weekend comes, the first thing she does is to get back her phone and reply my random messages, I reply immediately, just to spend that precious hour of freedom with her.#Teen_smile
-Maggie: "I'm striving to get to the same college as you. By then, I will have my phone with me, and have you every day!" That's what Patty said. Now you have your phone, why not give her a call?
+Maggie: "I'm striving to get to the same college as you. By then, I will have my phone with me, and have you every day!" That's what Patty said. #Teen_default
+Maggie: Now you have your phone, why not give her a call?#Teen_smile
 * It feels so embarassing to contact a person that you have not talked to for a long time.#Class:Blue #Teen_default
 Maggie: Ah, that's fair. Perhaps I should cherish that time before our friendship fades away.#Teen_default
 ->AfterFriend
@@ -246,95 +250,97 @@ It doesn't really mean anything, unless you give meaning to it. #Teen_default
 Speaking of that, what do you think of your 30s if you never meet me?#Class:Blue #Teen_default
 Maggie: I was dreaming of a satisfying life, and scared of finding out that things never turn out as what I expect. #Teen_default
 This statement still holds today when I think about my 40s. We are always getting a "fear" advance to prevent ourselves from falling behind, just as if any cash advance is going to solve our current problems.#Class:Blue#Teen_default
-We keep borrowing fear from the future, thinking it will protect us.But one day you realize, you're already living in the future you once tried to guard against.#Class:Blue#Teen_default
+We keep borrowing fear from the future, thinking it will protect us. But one day you realize, you're already living in the future you once tried to guard against.#Class:Blue#Teen_default
 (Suddenly, the screen in front of you turns dark. Your work might have gone unsaved. Damn it - You don't really understand why in an age of constant energy supply, there is still no effective way to resolve computer blackout)#Class:Purple #Teen_default
 (Maggie's voice disperses from the space, as if she never exists. You sigh, leave your seat to grab a cup of hot milk that will help you get to sleep, but suddenly all the lights in your room are off.)#Class:Purple 
-(Your room has fallen into darkness, or it has brought you back to the nights before time.)#Class:Purple #Picture_Room2 
+(Your room has fallen into darkness, or it has brought you back to the nights before time.)#Class:Purple #Picture_Room1
 (Those nights belong to the city once, but now are rejected as an error ever since the establishment of Helio centres.)#Class:Purple #Picture_Room1
 (You have no other choice but to look outside of your window. Lights are on as normal, rooms are covered under the curtain. You suddenly feel that you are the only dark spot left in the city.)#Class:Purple#Picture_CityLight
-(This recollects part of your memory as a student in a foreign city. Back in River Ville, one of your night activities is to drag two folding chairs to the backyard, knock Patty's door. You will sit together, shoulder beside shoulder, trying to figure out constellations in the sky.)#Class:Purple
-(When you came to the Light City, the first thing you noticed and felt sad about it...You once forgot such a minor detail, and that lost feeling suddenly comes back to you like a rising tide.#Class:Purple
-(You never saw a single star in the Light City. )#Class:Purple
-(You were once sad about it, but you ended up getting used to it.)#Class:Purple
-*Check the Breaker and on the light. You still have work to do. #Class:Blue
-You found a torch that has not been used for a long time. You crept out of your room, and fixed the issue in breaker - fixing utilities is just an essential skill to make a living alone for all these years.#Class:Blue
-Everything has gone back to normal. Luckily, your laptop has restarted, and your progress was autosaved to the latest checkpoint. #Class:Blue
-You didn't see or hear Maggie anywhere in the space. Just in one minute after you go back to work, in that intense brainstorming for bug-fixing, you have already forgotten everything about Maggie and your past.
+(This recollects part of your memory as a student in a foreign city. Back in River Ville, one of your night activities is to drag two folding chairs to the backyard, knock Patty's door.)#Class:Purple #Picture_CityLight
+(You will sit together, shoulder beside shoulder, trying to figure out constellations in the sky.)#Class:Purple#Picture_CityLight
+(When you came to the Light City, the first thing you noticed and felt sad about it...You once forgot such a minor detail, and that lost feeling suddenly comes back to you like a rising tide.#Class:Purple#Picture_CityLight
+(You never saw a single star in the Light City. )#Class:Purple#Picture_CityLight
+(You were once sad about it, but you ended up getting used to it.)#Class:Purple#Picture_CityLight
+*Check the Breaker and on the light. You still have work to do. #Class:Blue#Picture_CityLight
+You found a torch that has not been used for a long time. You crept out of your room, and fixed the issue in breaker - fixing utilities is just an essential skill to make a living alone for all these years.#Class:Blue#Picture_CityLight
+Everything has gone back to normal. Luckily, your laptop has restarted, and your progress was autosaved to the latest checkpoint. #Class:Blue#Picture_OriginalRoom
+You didn't see or hear Maggie anywhere in the space. Just in one minute after you go back to work, in that intense brainstorming for bug-fixing, you have already forgotten everything about Maggie and your past.#Class:Purple#Picture_OriginalRoom
 ~Achievement++
 ->Day2
-*{Sadness==3}Stay in the darkness.
-??:Hey, can you hear me?
-(You looked into your laptop. The screen is dark, but the voice undoubtedly comes from there.)#Class:Purple
-??:It's me.
-You still there, Maggie?#Class:Blue
-Maggie: Yes.
-(Her face gradually appears on your screen, from pixelated points to a clear figure. )#Class:Purple #Teen_default
-(Like rendering a scene when you reach a new place in game. Strange.)#Class:Purple #Teen_default
-Maggie: Power cut on my side, but tomorrow is my chem finals. So frustrating.#Teen_speechless
-What should I do? Or what did you do?#Teen_default
-(What did you do? that question comes to your mind. You definitely remember that night of power cut. That was a major incident in the Light City, and has been on the top1 popularity in social media discussion tags for consecutive weeks.)#Class:Purple #Teen_default
-(Everything was shut down suddenly. The city experienced drastic turmoil in the night.Bank systems collapsed, lots of embezzling attempts, and multiple car accidents occurred as the cars energy was also connected to the city's centralized supply.)#Class:Purple #Teen_default
-(Critiques to the system surge. Key opinion leaders pinpoints the complacency of system: when energy becomes unlimited, storage techs are obsoleted with ignorance, as if there will never be any possibility of systematic collapse)#Class:Purple #Teen_default
-(But you would never know about these that night. Or you won't care about it. What you care about, is only...)#Class：Purple #Teen_default
+*{Sadness==3}Stay in the darkness.#Picture_CityLight
+??:Hey, can you hear me?#Picture_CityLight
+(You looked into your laptop. The screen is dark, but the voice undoubtedly comes from there.)#Class:Purple#Picture_CityLight
+??:It's me.#Picture_CityLight
+You still there, Maggie?#Class:Blue#Picture_CityLight
+Maggie: Yes.#Picture_CityLight
+(Her face gradually appears on your screen, from pixelated points to a clear figure. )#Class:Purple #Teen_default#Picture_CityLight
+(Like rendering a scene when you reach a new place in game. Strange.)#Class:Purple #Teen_default#Picture_CityLight
+Maggie: Power cut on my side, but tomorrow is my chem finals. So frustrating.#Teen_speechless#Picture_CityLight
+What should I do? Or what did you do?#Teen_default#Picture_CityLight
+(What did you do? that question comes to your mind. You definitely remember that night of power cut. )#Class:Purple #Teen_default#Picture_CityLight
+(That was a major incident in the Light City, and has been on the top1 popularity in social media discussion tags for consecutive weeks.)#Class:Purple #Teen_default#Picture_CityLight
+(Everything was shut down suddenly. The city experienced drastic turmoil in the night.Bank systems collapsed, lots of embezzling attempts, and multiple car accidents occurred as the cars energy was also connected to the city's centralized supply.)#Class:Purple #Teen_default#Picture_CityLight
+(Critiques to the system surge. Key opinion leaders pinpoints the complacency of system: when energy becomes unlimited, storage techs are obsoleted with ignorance, as if there will never be any possibility of systematic collapse)#Class:Purple #Teen_default#Picture_CityLight
+(But you would never know about these that night. Or you won't care about it. What you care about, is only...)#Class：Purple #Teen_default#Picture_CityLight
 ->Stars
 
 =Stars
 *[Your chemistry exam.]->Chemistry 
-#Class:Blue #Teen_default
+#Class:Blue #Teen_default#Picture_Room2
 *[The stars in the sky.]->StarrySky
-#Class:Blue #Teen_default
+#Class:Blue #Teen_default#Picture_Room2
 
 =Chemistry
-I revised my chem exam that evening for the last sprint, and passed with flying colors.#Class:Blue#Teen_default
-Maggie: But how?#Teen_smile
-Try to dig out your torch from the suitcase. I put everything I don't normally use in the suitcase. You should know, that suitcase is really occupying lots of space yet our hostel room is so tiny, so I used it as a storage.#Class:Blue#Teen_default
-Maggie: Oh, thanks for your reminder. I'll do that!#Teen_smile
-(She disappears from your screen, leaving no trace behind. At that moment, your room reconnects to the city and your laptop is on. Your work was autosaved to the latest checkpoint, fortunately.)#Class:Purple
-(You take a deep breath, and start typing on your screen. Cursor is blinking and moving quickly, as if those codes flow out from your instinct without any thinking process.)#Class:Purple
-*"For the greater goods." You mumbled.#Class:Blue 
-(Light up the city is always your dream, isn't it? )#Class:Purple 
-(You once witnessed children mysteriously missing in that undeveloped River Ville: for undesired gender, poverty, or just that the parents are never properly prepared to nurture a child. )#Class:Purple
-(You once saw a red knitted hat alongside the river, soaked and dirty, sized to accommodate a baby's head. It was just in a second that you recall the lady living opposite was knitting it in the front yard. )#Class:Purple 
-(You returned it to her, and she burst into tears. It was then you know she has lost her daughter for three days, and no one besides her was actively seeking.)#Class:Purple
-(Deliberate ignorance or a murder? You will never know. But that constructs your belief of using your knowledge to build a lighted world: Illuminate every corner where evil breeds, so that all darkness is exposed, and nothing wicked can remain hidden.)#Class:Purple
+I revised my chem exam that evening for the last sprint, and passed with flying colors.#Class:Blue#Teen_default#Picture_CityLight
+Maggie: But how?#Teen_smile#Picture_CityLight
+Try to dig out your torch from the suitcase. I put everything I don't normally use in the suitcase. You should know, that suitcase is really occupying lots of space yet our hostel room is so tiny, so I used it as a storage.#Class:Blue#Teen_default#Picture_CityLight
+Maggie: Oh, thanks for your reminder. I'll do that!#Teen_smile#Picture_CityLight
+(She disappears from your screen, leaving no trace behind. At that moment, your room reconnects to the city and your laptop is on. Your work was autosaved to the latest checkpoint, fortunately.)#Class:Purple#Picture_OriginalRoom
+(You take a deep breath, and start typing on your screen. Cursor is blinking and moving quickly, as if those codes flow out from your instinct without any thinking process.)#Class:Purple#Picture_OriginalRoom
+*"For the greater goods." You mumbled.#Class:Blue #Picture_OriginalRoom
+(Light up the city is always your dream, isn't it? )#Class:Purple #Picture_OriginalRoom
+(You once witnessed children mysteriously missing in that undeveloped River Ville: for undesired gender, poverty, or just that the parents are never properly prepared to nurture a child. )#Class:Purple #Picture_OriginalRoom
+(You once saw a red knitted hat alongside the river, soaked and dirty, sized to accommodate a baby's head. It was just in a second that you recall the lady living opposite was knitting it in the front yard. )#Class:Purple #Picture_OriginalRoom
+(You returned it to her, and she burst into tears. It was then you know she has lost her daughter for three days, and no one besides her was actively seeking.)#Class:Purple #Picture_OriginalRoom
+(Deliberate ignorance or a murder? You will never know. But that constructs your belief of using your knowledge to build a lighted world: Illuminate every corner where evil breeds, so that all darkness is exposed, and nothing wicked can remain hidden.)#Class:Purple #Picture_OriginalRoom
 ~Dream++
 ~DOL=DOL+3
 ~DOR++
 ->Day2
-*"For a better life." You mumbled.#Class:Blue
-(As if your achieving in life all this while. You set your goal, follow your plans step by step, and you will attain it one day, just a matter of time.)#Class:Purple
-(You will sleep at 2:00AM tonight as you always do. Tomorrow you will wake up at 7:30AM to catch the shuttle to your office. If you complete this feature on time, you will be freed from that unnecessary commitment of attendance, and you will  wake up at 10:00AM each day if there is nothing urgent.)#Class:Purple
-(That's why you are always working so hard, from teenage years till now. It is 29 Dec, 3 days to new year. You still have ample time to work.)
+*"For a better life." You mumbled.#Class:Blue#Picture_OriginalRoom
+(As if your achieving in life all this while. You set your goal, follow your plans step by step, and you will attain it one day, just a matter of time.)#Class:Purple#Picture_OriginalRoom
+(You will sleep at 2:00AM tonight as you always do. Tomorrow you will wake up at 7:30AM to catch the shuttle to your office. )#Class:Purple#Picture_OriginalRoom
+(If you complete this feature on time, you will be freed from that unnecessary commitment of attendance, and you will  wake up at 10:00AM each day if there is nothing urgent.)#Class:Purple#Picture_OriginalRoom
+(That's why you are always working so hard, from teenage years till now. It is 29 Dec, 3 days to new year. You still have ample time to work.)#Picture_OriginalRoom #Class:Purple
 ~Stability=Stability+2
 
 ->Day2
-*"To make my family proud of me." You mumbled.
-(You have been walking alone for so long, and you know your parents are proud of you. As the only successful applicant from River Ville, your name is equated to a legend of success in your hometown.)#Class:Purple
-(Your parents became celebrities in the ville. Shop owners round down their bill to exchange for educational advice, villagers gift them fruits to visit your past bedroom and read your study notes)#Class:Purple
-(But they have all these benefits at the cost of losing you. You seldom look back to River Ville, spend all your time to work in the city during holidays, so that you can repay to your family.)#Class:Purple
-(Sadly, your parents have passed away last year due to pandemic, and you never managed to go back. The last reason for you to look back has dissipated in time.)#Class:Purple
-(But you still remember the last message from your mother.)#Class:Purple
-("We are always proud of you.")#Class:Purple#Picture:PhoneInterfacewithWords
-(For them to be proud of you. That was your goal before, and will last forever. Your parents raised you up to escape from your destiny, and escape from themselves, and you have to live a good life to repay their sacrifice.)#Class:Purple
-(You live your life as a monument, so that it may commemorate the obscurity of their unnamed lives.)#Class:Purple
-(That's too far. You have wasted so much time in thinking. Tomorrow you still need to wake up at 7:00AM to catch the first shuttle. There is a government agent visiting the helio centre, you have to get ready.)#Class:Purple
+*"To make my family proud of me." You mumbled.#Class:Purple#Picture_OriginalRoom
+(You have been walking alone for so long, and you know your parents are proud of you. As the only successful applicant from River Ville, your name is equated to a legend of success in your hometown.)#Class:Purple#Picture_OriginalRoom
+(Your parents became celebrities in the ville. Shop owners round down their bill to exchange for educational advice, villagers gift them fruits to visit your past bedroom and read your study notes)#Class:Purple#Picture_OriginalRoom
+(But they have all these benefits at the cost of losing you. You seldom look back to River Ville, spend all your time to work in the city during holidays, so that you can repay to your family.)#Class:Purple#Picture_OriginalRoom
+(Sadly, your parents have passed away last year due to pandemic, and you never managed to go back. The last reason for you to look back has dissipated in time.)#Class:Purple#Picture_OriginalRoom
+(But you still remember the last message from your mother.)#Class:Purple#Picture_OriginalRoom
+("We are always proud of you.")#Class:Purple#Picture_OriginalRoom
+(For them to be proud of you. That was your goal before, and will last forever. Your parents raised you up to escape from your destiny, and escape from themselves, and you have to live a good life to repay their sacrifice.)#Class:Purple#Picture_OriginalRoom
+(You live your life as a monument, so that it may commemorate the obscurity of their unnamed lives.)#Class:Purple#Picture_OriginalRoom
+(That's too far. You have wasted so much time in thinking. Tomorrow you still need to wake up at 7:00AM to catch the first shuttle. There is a government agent visiting the helio centre, you have to get ready.)#Class:Purple#Picture_OriginalRoom
 ~Achievement=Achievement+3
 ->Day2
 
 
 =StarrySky
-Are you staying at the rooftop study area?#Class:Blue #Teen_default
-Maggie: Ya, you know me. I love that place, though it's too windy to keep my notes in control. #Teen_default
-Look up.#Class:Blue #Teen_default
+Are you staying at the rooftop study area?#Class:Blue #Teen_default#Picture_CityLight
+Maggie: Ya, you know me. I love that place, though it's too windy to keep my notes in control. #Teen_default#Picture_CityLight
+Look up.#Class:Blue #Teen_default#Picture_CityLight
 (Maggie's figure disappears from your screen. In a short while, you see stars emerging on your screen. You see the stars through Maggie's eyes. #Picture:StarryNight
-//Or can we use Van Gogh's starry night as a CG here? Do not use the most famous one, but some other starry nights he drew?
-(Everything including time has paused. You immerse in the darkness, feeling like home.)#Class:Purple 
-(You cannot exactly remember the outcome of that chemistry test. And standing at this point of time, everything that once mattered doesn't matter to you anyway.)#Class:Purple
-(What about your work? You try to imagine yourself at the age of 40. Will you regret for not fixing that error on time, which defers your promotion at every step; or you will regret for not looking up to the starry sky that night?)#Class:Purple
-(Everything has returned to darkness and solitude. In that stagnant silence, you have a faint glimpse of your calendar: it is 29 Dec.)#Class:Purple 
-(You still have three days to report to your boss, and that determines whether you are able to secure the earliest round of merit-based promotion next year.) #Class:Purple
-(However, a sudden ideal struck you in your mind: is there anything more important, more compelling to decide apart from work?)#Class:Purple
-(You have a vague sense of it, but you know you will still turn on your laptop shortly, work until 2AM, and get up at 7:30AM to catch the office shuttle tomorrow.)#Class:Purple
+(Everything including time has paused. You immerse in the darkness, feeling like home.)#Class:Purple #Picture:StarryNight
+(You cannot exactly remember the outcome of that chemistry test. And standing at this point of time, everything that once mattered doesn't matter to you anyway.)#Class:Purple#Picture_StarryNight
+(What about your work? You try to imagine yourself at the age of 40. Will you regret for not fixing that error on time, which defers your promotion at every step; or you will regret for not looking up to the starry sky that night?)#Class:Purple #Picture_StarryNight
+(Everything has returned to darkness and solitude. In that stagnant silence, you have a faint glimpse of your calendar: it is 29 Dec.)#Class:Purple  #Picture_Room2
+(You still have three days to report to your boss, and that determines whether you are able to secure the earliest round of merit-based promotion next year.) #Class:Purple  #Picture_Room2
+(However, a sudden ideal struck you in your mind: is there anything more important, more compelling to decide apart from work?)#Class:Purple  #Picture_Room2
+(You have a vague sense of it, but you know you will still turn on your laptop shortly, work until 2AM, and get up at 7:30AM to catch the office shuttle tomorrow.)#Class:Purple  #Picture_OriginalRoom
 ~Dream++
 ~DOT++
 ->Day2
@@ -679,16 +685,16 @@ One day, when you sit in front of your desk, you hear a familiar voice calling:#
 ->END
 
 ===EsterEgg1===
-//Triggered if Music=Trip, Dessert=Pancake, Drink=Hotchocolate
+//Triggered if Music=Trip, Dessert=Cheesecake, Drink=Hotchocolate
 ??:Bello!
 (An unfamiliar husky voice sealed away for centuries.)#Class:Purple
 Who are you?#Class:Blue
 HEHEHEHEHE!!!
 (Pretentious evil laughter like the villain in comics. Seriously?!)#Class:Purple
 ??:Tada! Surprise!
-(WHAT? Isn't that Betty, the doll that Patty gave you as a Christmas gift and you accidentally lost her during your transit to Light City?)#Class:Purple
-(You used to like Betty very much. Patty and you used Betty and her doll Mary to play house. You leaked some of your stories with Bernard during your play. Shhh... You will never let Bernard know.)#Class:Purple
-Betty: I come just to let you know, Patty missed you, but she's too shy to let you know. So I'll do her a favor to inform you.
+(WHAT? Isn't that Betty, the doll that Patty gave you as a Christmas gift and you accidentally lost her during your transit to Light City?)#Class:Purple #Doll_default
+(You used to like Betty very much. Patty and you used Betty and her doll Mary to play house. You leaked some of your stories with Bernard during your play. Shhh... You will never let Bernard know.)#Class:Purple#Doll_default
+Betty: I come just to let you know, Patty missed you, but she's too shy to let you know. So I'll do her a favor to inform you.#Doll_default
 ~Friend++
 ~DOS++
 (She vanishes without a trace. OK, maybe you'll find some time to contact Patty.)
@@ -698,10 +704,19 @@ Betty: I come just to let you know, Patty missed you, but she's too shy to let y
 ??:Meow.
 (A cat?!Or someone playing a prank?!)
 ??:Meow!
-(That's really a cat!! The one that you once fed when you first came to Light City...You told her lots of secrets.)#Class:Purple
-Cat: Meow meow meow meow, meow meow?#Cat
-(Jesus. She even knows your crush on so many people.)#Class:Purple
-Meow!Meow meow meow...Meow!#Class:Blue
-(You almost yelled to shoo the cat away. She left with an uncanny smile like the Cheshire Cat. If you have a chance, you might write a story about a speaking cat.)
+(That's really a cat!! The one that you once fed when you first came to Light City...You told her lots of secrets.)#Class:Purple#Cat_default
+(She likes the smell of hotdog. You met her for the first time when you were eating a hotdog. But sadly you can't feed a cat with a salty hotdog.)#Class:Purple#Cat_default
+(She might be gratitude to your past feeding action, or she holds a grudge to you for never feeding her with a hotdog?!)
+Cat: Meow? Meowwww......
+(She asked if you have felt better after you get a straight C for your first final exam in Light City College. Ancient histories of yours.)#Class:Purple#Cat_default
+I'm fine. I have passed my professional engineering test, and no longer need to worry anything about those subject finals!#Class:Blue#Cat_default
+Cat: Meow!!! Meowwwww!!
+(She really didn't appear with a kind intention, you finally realize. She's not really caring about your mental status, but rather just challenging you with your embarrasing past.)#Class:Purple#Cat_default
+Hehe. You will never have your way. #Class:Blue#Cat_default
+Cat: Meow meow meow meow meow - meow meow meow meow! Meeeeow, meooooo, meowwwww......Meow meow meow meow, meow meow? #Cat_default
+(Jesus. She even knows your crush on so many people...)#Class:Purple#Cat_default
+Meow!Meow meow meow...Meow! Hahahaha!#Class:Blue#Cat_default
+(Is that really a sound made by a cat??? )#Class:Purple#Cat_default
+(You almost yelled to shoo the cat away. She left with an uncanny smile like the Cheshire Cat. If you have a chance, you might write a story about a speaking cat.)#Cat_default
 ~DOS++
 ->END
