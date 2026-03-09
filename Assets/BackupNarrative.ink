@@ -230,16 +230,19 @@ Maggie:You should go back and contact her some day. Now I cannot really call her
 Maggie: Whenever the weekend comes, the first thing she does is to get back her phone and reply my random messages, I reply immediately, just to spend that precious hour of freedom with her.#Teen_smile
 Maggie: "I'm striving to get to the same college as you. By then, I will have my phone with me, and have you every day!" That's what Patty said. #Teen_default
 Maggie: Now you have your phone, why not give her a call?#Teen_smile
+->friend1
 }
-* {Sadness==3}It feels so embarassing to contact a person that you have not talked to for a long time.#Class:Blue #Teen_default
+->AfterFriend
+
+=friend1
+* It feels so embarassing to contact a person that you have not talked to for a long time.#Class:Blue #Teen_default
 Maggie: Ah, that's fair. Perhaps I should cherish that time before our friendship fades away.#Teen_default
 ->AfterFriend
-* {Sadness==3}I'll try that, after this year-end catastrophe is over.#Class:Blue #Teen_default
+*I'll try that, after this year-end catastrophe is over.#Class:Blue #Teen_default
 Maggie: I bet you will.#Teen_smile
 ~Friend++
 ->AfterFriend
 
-->AfterFriend
 
 =AfterFriend
 But look at me. I got it through. You've made it. I have settled down in this city. This will also be your future.#Class:Blue #Teen_default
