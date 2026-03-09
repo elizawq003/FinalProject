@@ -46,13 +46,13 @@ A Piece of Night
 ->Start
 
 ===Start===
-How are you?#Teen_smile
+Maggie: How are you?#Teen_smile
 Before answering that, I should prompt you for an explanation of your existence first.#Teen_smile
-Errr, you are so boring and serious, and always view the world with an epistemological approach. #Teen_speechless
+Maggie: Errr, you are so boring and serious, and always view the world with an epistemological approach. #Teen_speechless
 Are you speaking of yourself since you CLAIM to be my 15-year-old self, or I should call you Maggie?#Teen_default
 Maggie: I'm nothing like you. But fair enough, that's how my friends call me. Do you remember Patty? Do you still have contact with her?#Teen_default
 Kind of, if you call that regular New Year wishes broadcasted to everyone is a form of contact. #Teen_default
-Growing up is just so dull. What are you doing now?#Teen_default
+Maggie: Growing up is just so dull. What are you doing now?#Teen_default
 I'm a light engineer in the Light City, making sure a region is fully covered by light sources.#Teen_default
 Ever since we built the Dyson swarm, solar energy can be transmitted directly. Now every city is building full light coverage systems.#Teen_default
 Maggie: For what? #Teen_default
@@ -68,18 +68,18 @@ Maggie: Like achieving a straight A on your transcript? #Teen_default
 *Totally.#Teen_default
 ~Achievement++
 ->Combine1
-{Sadness==0:
-*Not Exactly. More like my dream as always, to create a world with no darkness, conspiracies and evil. #Teen_default
+
+*{Sadness==0}Not Exactly. More like my dream as always, to create a world with no darkness, conspiracies and evil. #Teen_default
 ~Dream++
 ~DOL++
 ->Combine1
-}
-{Repulsion==0:
-*Don't you think energy tech itself is fascinating? #Teen_default
+
+
+*{Repulsion==0}Don't you think energy tech itself is fascinating? #Teen_default
 ~Dream++
 ~DOR++
 ->Combine1
-}
+
 
 * I don't know. #Teen_default
 Maggie: OK, then we are on the same page: I don't know what I'm doing, and really cannot imagine at the age of 30 I will still be like this.#Teen_default
@@ -89,20 +89,20 @@ Maggie: OK, then we are on the same page: I don't know what I'm doing, and reall
 * The "Not knowing" state in your 15s and in my 30s is not the same.#Teen_default
 One is not knowing what you want, the other is not knowing how to choose.#Teen_default
 Maggie: If your life is a balance with two sides, your job is on one side, what will be your other side? #Teen_default
-{Repulsion==3 && Sadness==3: 
-* Not sure, but I need to escape from my current life.#Teen_default
+->Combine1
+* {Repulsion==3 && Sadness==3}Not sure, but I need to escape from my current life.#Teen_default
 ~Stability--
 ->Combine1
-}
+
 
 * Yeah, you're right. People never know the cutting point of growing up.#Teen_default
 ->Combine1
 
 =Combine1
 Maggie: Anyways, how are you? #Teen_default
-It's the third time you are asking this question.#Class:Blue
+It's the third time you are asking this question.#Class:Blue#Teen_default
 Maggie: And NEVER get a proper answer. As a 15-year-old teenager I'm really curious about my future life.#Teen_default
-I have told you, you want me to repeat? I'm a light engineer...#Class:Blue
+I have told you, you want me to repeat? I'm a light engineer...#Class:Blue#Teen_default
 Maggie: Urgggg not this one. I want to know about your LIFE. #Teen_speechless
 Maggie: Come home alone, grab that instant noodle and a 10PM cup of coffee, play a sound track that almost explodes my brain. Is that your life?#Teen_speechless
 Not everyday, there's an emergency. The area under me encounters a bug and I need to resolve it before the new year's deadline. #Teen_default
@@ -141,9 +141,10 @@ And Helio Centres are like Tokamak reactors in the past, huge, dangerous, high t
 Maggie: OK, I'll buy that. At least you are more patient than the chem teacher.#Teen_default
 Maggie: Luckily, I haven't grown up into a mean adult. #Teen_smile
 * NO NO NO, I have the meanest manner behind the scene (make a harsh face)#Teen_default
+Maggie:(Laugh out loud) Woah looks like I will be scared! #Teen_smile
 ~TeenAffinity++
 ->AfterTease
-Maggie:(Laugh out loud) Woah looks like I will be scared! #Teen_smile
+
 * Whatever.
 ->AfterTease
 
@@ -160,23 +161,25 @@ Maggie: That's attractive. Apart from higher pay, what will you get?#Teen_defaul
 Longer holidays, fully remote working - plus an exchange program in Star City with all costs covered by my company. I've been craving for their chicken rice for years. #Class:Blue #Teen_default
 {Repulsion==3:
 Maggie: But you sound reluctant.
-*Am I? I don't think so.#Class:Blue #Teen_default
+}
+*{Repulsion==3}Am I? I don't think so.#Class:Blue #Teen_default
 Maggie: OK, then just assume I said nothing. #Teen_default
 ->Benefits
-*......(Silence)#Class:Blue #Teen_default
+*{Repulsion==3}......(Silence)#Class:Blue #Teen_default
 Maybe the benefits need me more than I need them.#Teen_default
 ~Stability--
 ~Achievement--
 ->Benefits
-}
+
 {Repulsion==0&&Sadness==0:
 Maggie: You sound excited. Does the vision of success excite you that much?#Teen_smile
-* Yes! I'm super happy when thinking about what I can do with the higher pay.#Class:Blue #Teen_default
+}
+*{Repulsion==0&&Sadness==0} Yes! I'm super happy when thinking about what I can do with the higher pay.#Class:Blue #Teen_default
 I may rent a single person apartment in Star City, facing the river and see the starry city on the other side. #Class:Blue #Teen_default
 That's exactly the life I'm looking for. That's my goal of this everlasting migration - to find a home of my own.#Class:Blue #Teen_default
 ~Achievement++
 ->Benefits
-* Of course! Star City has the most advanced technology. #Class:Blue #Teen_default
+* {Repulsion==0&&Sadness==0}Of course! Star City has the most advanced technology. #Class:Blue #Teen_default
 Apart from their light technology, I'd love to see their space tourism systems.#Class:Blue #Teen_default
 Because they have much trading transportation for those crops planted on other planets, they have in the meantime developed the mature space transit that only needs a few thousand bucks.#Class:Blue #Teen_default
 ~Dream++
@@ -207,8 +210,7 @@ Maggie: What's the outcome?#Teen_smile
     ~Dream--
     }
 ->Benefits
-}
-->Benefits
+
 
 =Benefits
 Maggie: Another exchange program... We are always exchanging, physically and culturally.#Teen_sad
@@ -228,14 +230,15 @@ Maggie:You should go back and contact her some day. Now I cannot really call her
 Maggie: Whenever the weekend comes, the first thing she does is to get back her phone and reply my random messages, I reply immediately, just to spend that precious hour of freedom with her.#Teen_smile
 Maggie: "I'm striving to get to the same college as you. By then, I will have my phone with me, and have you every day!" That's what Patty said. #Teen_default
 Maggie: Now you have your phone, why not give her a call?#Teen_smile
-* It feels so embarassing to contact a person that you have not talked to for a long time.#Class:Blue #Teen_default
+}
+* {Sadness==3}It feels so embarassing to contact a person that you have not talked to for a long time.#Class:Blue #Teen_default
 Maggie: Ah, that's fair. Perhaps I should cherish that time before our friendship fades away.#Teen_default
 ->AfterFriend
-* I'll try that, after this year-end catastrophe is over.#Class:Blue #Teen_default
+* {Sadness==3}I'll try that, after this year-end catastrophe is over.#Class:Blue #Teen_default
 Maggie: I bet you will.#Teen_smile
 ~Friend++
 ->AfterFriend
-}
+
 ->AfterFriend
 
 =AfterFriend
@@ -549,19 +552,24 @@ But all of a sudden, you feel that all this while you've been persuading yoursel
 (Margaret looking into your eyes with that professional half-smile. You shiver as you realize how she looks different from how you perceive yourself.)#Adult_smile
 (When you were a student, every morning before you set off to school, you will look yourself closely in the mirror. During those tough years when you first moved to the city, you always have a sense of inferiority, so at least you will make yourself decent enough among your peers.)#Adult_smile
 (You deliberately erase the naviety on your face, day by day, and now, when you finally feel yourself grown up, standing just outside the threshold of adulthood, waiting for your coming-of-age ceremony in the form of a career promotion - You finally feel that something is wrong.)#Adult_smile
-(Luckily, you still have a chance to revert it all back.)
-*Crash the code, and save the darkness.
-->Ending0
-*Don't mind the intrusive thoughts. Be yourself.
-->Ending1
+
+->Choice1
 }
+
+=Choice1
+(Luckily, you still have a chance to revert it all back.)#Adult_smile
+*{Repulsion==3}Crash the code, and save the darkness.
+->Ending0
+*{Repulsion==3}Don't mind the intrusive thoughts. Be yourself.
+->Ending1
+
 
 ** ......You are right to say so.
 Margaret: If you can eliminate things that are meaningful to others, why would you preserve something meaningful to you?
 *** If losing the last piece of night from the city, the only piece of me remaining in the city will be gone.
 (You reached Light City late in the night. When the train ringed the bell and left for the next destination, passengers went down from the platform, their back view blend into the light in the station... At the age of 15, you had a strong impulse to stay.)#type_animation
 (The soft glow in the station is close within a reach, but you hesitated to enter. The station is like a "light hole" where no darkness can escape, nor things related to darkness - the loneliness, nostalgia, solitude.)#Picture:Station#type_animation
-(You stepped back from the edge. You sat at the bench beside the rail. Summer breeze gently stroked your face. You suddenly miss home so much. The station shared the same stars with River Ville. That was 11:59PM, just before the last bus to the city set off.)#Picture:Station#type_animation
+(You stepped back from the edge. You sat at the bench beside the rail. Summer breeze gently stroked your face. You suddenly miss home so much. The station shared the same stars with River Ville. That was 11:59PM, just before the last bus to the city set off.)#Picture:Station #type_animation
 (11:59PM. Time for a decision.)#type_animation
 ****Preserve the darkness
 ->Ending2
@@ -578,11 +586,12 @@ What else are you referring to?#Class:Blue
 (She looks into your eyes, silently. Through that scrutiny you slowly recall everything that you once sacrificed everything to escape from yet always revisited: River Ville, the train station, your old friend, old dream, and the nights.)#type_animation
 {DOL>3:
 (And you ask yourself a question: If something evil ever happens in your Light City, just in that deserted train station you deliberately preserve, will you be guilty for that? #type_animation
-*I will preserve the nights.
-->Ending3
-*I will preserve the light.
-->Ending4
 }
+*{DOL>3}I will preserve the nights.
+->Ending3
+*{DOL>3}I will preserve the light.
+->Ending4
+
 But does that established vision really worth your sacrifice? Standing just before a new beginning, should it be a turning point for your new life?
 *{Repulsion==3}I will still finish my task.
 ->Ending6
@@ -593,10 +602,6 @@ She never responds back. As though she does not have an answer.#type_animation
 You have so many similar moments in the past of your life, standing at the crossroads and thinking whether ten years later you will be regretted for any of your choice today.#type_animation
 But you never know. You just never know. #type_animation
 ->Ending1
-
-
-
-
 
 
 ===Ending0===
@@ -720,3 +725,4 @@ Meow!Meow meow meow...Meow! Hahahaha!#Class:Blue#Cat_default
 (You almost yelled to shoo the cat away. She left with an uncanny smile like the Cheshire Cat. If you have a chance, you might write a story about a speaking cat.)#Cat_default
 ~DOS++
 ->END
+
