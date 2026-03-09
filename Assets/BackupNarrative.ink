@@ -47,47 +47,47 @@ A Piece of Night
 
 ===Start===
 Maggie: How are you?#Teen_smile
-Before answering that, I should prompt you for an explanation of your existence first.#Teen_smile
+Before answering that, I should prompt you for an explanation of your existence first.#Teen_smile#Class:Blue
 Maggie: Errr, you are so boring and serious, and always view the world with an epistemological approach. #Teen_speechless
-Are you speaking of yourself since you CLAIM to be my 15-year-old self, or I should call you Maggie?#Teen_default
+Are you speaking of yourself since you CLAIM to be my 15-year-old self, or I should call you Maggie?#Teen_default#Class:Blue
 Maggie: I'm nothing like you. But fair enough, that's how my friends call me. Do you remember Patty? Do you still have contact with her?#Teen_default
-Kind of, if you call that regular New Year wishes broadcasted to everyone is a form of contact. #Teen_default
+Kind of, if you call that regular New Year wishes broadcasted to everyone is a form of contact. #Teen_default#Class:Blue
 Maggie: Growing up is just so dull. What are you doing now?#Teen_default
-I'm a light engineer in the Light City, making sure a region is fully covered by light sources.#Teen_default
-Ever since we built the Dyson swarm, solar energy can be transmitted directly. Now every city is building full light coverage systems.#Teen_default
+I'm a light engineer in the Light City, making sure a region is fully covered by light sources.#Teen_default#Class:Blue
+Ever since we built the Dyson swarm, solar energy can be transmitted directly. Now every city is building full light coverage systems.#Teen_default#Class:Blue
 Maggie: For what? #Teen_default
 * Pragmatically feasible. Better for surveillance and security.#Teen_default
 Maggie: Such a dry reasoning. Sounds like what I will write for my argumentative essay.#Teen_speechless
 ~Stability++
 ->Combine1
-* A fully lit world is just a beautiful vision.#Teen_default
+* A fully lit world is just a beautiful vision.#Teen_default#Class:Blue
 ->DOL1
 
 =DOL1
-Maggie: Like achieving a straight A on your transcript? #Teen_default
+Maggie: Like achieving a straight A on your transcript? #Teen_default#Class:Blue
 *Totally.#Teen_default
 ~Achievement++
 ->Combine1
 
-*{Sadness==0}Not Exactly. More like my dream as always, to create a world with no darkness, conspiracies and evil. #Teen_default
+*{Sadness==0}Not Exactly. More like my dream as always, to create a world with no darkness, conspiracies and evil. #Teen_default#Class:Blue
 ~Dream++
 ~DOL++
 ->Combine1
 
 
-*{Repulsion==0}Don't you think energy tech itself is fascinating? #Teen_default
+*{Repulsion==0}Don't you think energy tech itself is fascinating? #Teen_default#Class:Blue
 ~Dream++
 ~DOR++
 ->Combine1
 
 
-* I don't know. #Teen_default
+* I don't know. #Teen_default#Class:Blue
 Maggie: OK, then we are on the same page: I don't know what I'm doing, and really cannot imagine at the age of 30 I will still be like this.#Teen_default
 ->IDK1
 
 =IDK1
-* The "Not knowing" state in your 15s and in my 30s is not the same.#Teen_default
-One is not knowing what you want, the other is not knowing how to choose.#Teen_default
+* The "Not knowing" state in your 15s and in my 30s is not the same.#Teen_default#Class:Blue
+One is not knowing what you want, the other is not knowing how to choose.#Teen_default#Class:Blue
 Maggie: If your life is a balance with two sides, your job is on one side, what will be your other side? #Teen_default
 ->Combine1
 * {Repulsion==3 && Sadness==3}Not sure, but I need to escape from my current life.#Teen_default
@@ -95,7 +95,7 @@ Maggie: If your life is a balance with two sides, your job is on one side, what 
 ->Combine1
 
 
-* Yeah, you're right. People never know the cutting point of growing up.#Teen_default
+* Yeah, you're right. People never know the cutting point of growing up.#Teen_default#Class:Blue
 ->Combine1
 
 =Combine1
@@ -105,7 +105,7 @@ Maggie: And NEVER get a proper answer. As a 15-year-old teenager I'm really curi
 I have told you, you want me to repeat? I'm a light engineer...#Class:Blue#Teen_default
 Maggie: Urgggg not this one. I want to know about your LIFE. #Teen_speechless
 Maggie: Come home alone, grab that instant noodle and a 10PM cup of coffee, play a sound track that almost explodes my brain. Is that your life?#Teen_speechless
-Not everyday, there's an emergency. The area under me encounters a bug and I need to resolve it before the new year's deadline. #Teen_default
+Not everyday, there's an emergency. The area under me encounters a bug and I need to resolve it before the new year's deadline. #Teen_default#Class:Blue
 This will affect our year-end assessment as a department, and I'm unfortunately on the year-end call. #Class:Blue#Teen_default
 My boss is really pushing hard. So I have to stay up to monitor and fix the real time issues. #Class:Blue#Teen_default
 Maggie: Am I wasting your time then?#Teen_default
@@ -445,50 +445,50 @@ Agent X: If I tell you, a secret counts no more. #Kid_smile
 ->AfterKidAffinity
 
 =AfterKidAffinity
-(It is already 11PM. You have to go back to work. You are left with two days to new year, and your progress is really worrying.)
-*Kid, listen, I have to go back to work.
+(It is already 11PM. You have to go back to work. You are left with two days to new year, and your progress is really worrying.)#Class:Purple
+*Kid, listen, I have to go back to work.#Class:Blue
 Agent X: Can't you just spend more time with me?#Kid_sad
-I can't, I'm already spending longer than I supposed to be. 
+I can't, I'm already spending longer than I supposed to be. #Class:Blue
 Agent X: Would you answer my last question?
 
 Agent X: What does it mean to grow up?
     Growing up means taking on responsibilities, and giving up on unrealistic ideals.
-    Agent X: I'm going to school tomorrow.#Kid_default
-    ***What does that mean?
+    Agent X: I'm going to school tomorrow.#Kid_default#Class:Blue
+    ***What does that mean?#Class:Blue
     Agent X: Does that mean I will grow up?#Kid_sad
-    **** Life is far longer than you think.
+    **** Life is far longer than you think.#Class:Blue
     Agent X: How long will it take to grow up?
     (You really don't know how to answer. It feels like your life has been stagnant for all this while. You are not sure if you are in your ultimate stage of growth, or you are stuck somewhere before that growth really happens.)#Class:Purple
     ->KidAffinityReach
-    **** Yes, it's a beginning of your growth.
+    **** Yes, it's a beginning of your growth.#Class:Blue
     (To you, growth is a process, growing up is a spectrum. Perhaps a beginning happens even earlier than her first day in school. It might have happened since the moment the question is asked.)#Class:Purple
     ->KidAffinityReach
-    ***You are prepared, believe in yourself.
-    (This is just a useless encouragement. A white lie. Only you know how tough it was for a village girl.)
+    ***You are prepared, believe in yourself.#Class:Blue
+    (This is just a useless encouragement. A white lie. Only you know how tough it was for a village girl.)#Class:Purple
     ->KidAffinityReach
 
     
 
 =KidAffinityReach
 Agent X: Will we meet again? Do you have anything else to say to me?#Teen_default
-*Best of luck. I will go back to work.
+*Best of luck. I will go back to work.#Class:Blue
 ->AfterWork
-*{KidAffinity>3} I want to ask you a question.
+*{KidAffinity>3} I want to ask you a question.#Class:Blue
     (You still remember that first day. In River Ville, parents do not have any awareness for pre-education. Basically you just go to school like a blank piece of paper. )#Class:Purple
     (There is a shuttle between River Ville and Rock Town. Every day you need to take that bus at 5:30AM, and reach school at 7:00AM for flag-raising ceremony.)#Class:Purple
-    (This was a facility provided by the town to support the underdeveloped River Ville. Luckily you have Patty back then, life wasn't that hard.)
+    (This was a facility provided by the town to support the underdeveloped River Ville. Luckily you have Patty back then, life wasn't that hard.)#Class:Purple
     (But you somehow find something missing deep in your heart. Like a missing jigsaw piece that does not really affect the full pattern.)#Class:Purple
     What is the first thing you want to do after you go to school and study things new?#Class:Blue
     (She remains silent with contemplation. After a while, she speaks with a sense of seriousness.)#Class:Purple#Teen_default
 Agent X: I want to write out the stories between me and Bernard, as a record of our friendship, before he loses me or I loses him.#Teen_smile
 Agent X: Oh, Bernard is calling me. Byebye!
-(She left, as if she will see you tomorrow. )
+(She left, as if she will see you tomorrow. )#Class:Purple
 (Yes, a story. She wanted to write a story. And that notebook was confiscated during class when she was doodling herself hiding in the tree hole."Be realistic!" Teacher said in a harsh tone.)#Class:Purple
 (That was the last story she wrote, and Bernard was dead soon after she stopped writing. He was really an old tree with fragile structure, at the age of 30, you can tell it was natural. But Agent X couldn't. She thought it was her fault.)#Class:Purple
-**It is all over. I need to move on.
+**It is all over. I need to move on.#Class:Blue
 ->AfterWork
-**Perhaps, as an adult, I can help her recollect that dream.
-You made up your mind. Engineer might be part of your identity, but it fails to define you. A germ that was once inhibitted bud in a new winter after 24 years. Spring will come, and you will start something new in your life, or to reencounter your past.
+**Perhaps, as an adult, I can help her recollect that dream.#Class:Blue
+(You made up your mind. Engineer might be part of your identity, but it fails to define you. A germ that was once inhibitted bud in a new winter after 24 years. Spring will come, and you will start something new in your life, or to reencounter your past.)#Class:Purple
 ~Dream=Dream+3
 ~DOS=DOS+2
 ->Day3
@@ -497,13 +497,13 @@ You made up your mind. Engineer might be part of your identity, but it fails to 
 
 =AfterWork
 (You worked for the whole evening until 2AM. Things go really smoothly. You believe you can complete everything by the beginning of new year.)#Class:Purple
-It's been a long time since you last have a dream. You dream of someone calling your name but you never respond.#type_animation
-Another dream almost come to your memory. That was you at the age of six, just before you go to primary school. You were so worried about the upcoming life.#type_animation
-While excited about your chance to escape from here, you are also scared that one day you will be resigned to the fate as a village girl, get married early, continuing the life of your grandparents, your parents, and pass the same life to your daughter or son.#type_animation
-You said so many "Hello" in that dream, yet only your own voice echos in darkness.#type_animation
-You once believed that there is another self that can guide you through all difficulties. In your childhood years, you have been calling her for so many times: You arranged games for the two of you, hide in the tree hole, anticipating that one day you will be found.#type_animation
-But no. Nothing happened. Your imaginary elder self, your friend, has never looked back to her past.#type_animation
-It was that night you realized: You have to grow up from those useless imaginations. You are all alone.#type_animation
+It's been a long time since you last have a dream. You dream of someone calling your name but you never respond.#Class:Purple
+Another dream almost come to your memory. That was you at the age of six, just before you go to primary school. You were so worried about the upcoming life.#Class:Purple
+While excited about your chance to escape from here, you are also scared that one day you will be resigned to the fate as a village girl, get married early, continuing the life of your grandparents, your parents, and pass the same life to your daughter or son.#Class:Purple
+You said so many "Hello" in that dream, yet only your own voice echos in darkness.#Class:Purple
+You once believed that there is another self that can guide you through all difficulties. In your childhood years, you have been calling her for so many times: You arranged games for the two of you, hide in the tree hole, anticipating that one day you will be found.#Class:Purple
+But no. Nothing happened. Your imaginary elder self, your friend, has never looked back to her past.#Class:Purple
+It was that night you realized: You have to grow up from those useless imaginations. You are all alone.#Class:Purple
 ~Dream--
 ->Day3
 
