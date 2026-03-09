@@ -365,9 +365,13 @@ Again???#Class:Blue
 (It's such a bad day. You almost hope there are two toothpicks there to hold your eyelids open, so that you won't be in that sleepy state when presenting to that frustrating man.)#Class:Purple
 (On your way back, you keep telling yourself: Do not answer. Not a word. Even if that voice is calling you. Pretend it never exists.)#Class:Purple
 ??:Hey, are you there?
-(That voice keeps calling. You turn on your laptop, and there's no figure showing. It would be easier to pretend the voice doesn’t exist.)
+(That voice keeps calling. You turn on your laptop, and there's no figure showing. It would be easier to pretend the voice doesn’t exist.)#Class:Purple
 *[Open your work file and proceed with your plan today.]->Work
-*[Respond to the voice.]->Respond
+#Class:Blue
+*Respond to the voice.#Class:Blue
+I'm here, who are you?#Class:Blue
+??: Hehehe, I'm Agent X. Get my signal: BERNARD!
+->Respond
 
 =Work
 ??:Catch me if you can!
@@ -398,90 +402,90 @@ This is the final notice: if you don't respond, I will never talk to you again.
 (Bernard has a hollow body, and down at the root there is an entrance that can accommodate a child. That was your secret base. You didn't even tell Patty about that, so you are always the winner in hide and seek. It was the only place in the world that belonged solely to you.)#Class:Purple
 ??:Amazing!
 (A girl emerges on your screen. Welcome, Agent X, to future - yes, Agent X is your 6-year-old self. She's an agent from supernatural research institution - based on her own setting)#Class:Purple #Kid_default
-(Why did you call yourself Agent X? You don't know, but such a cringe worthy past!)
+(Why did you call yourself Agent X? You don't know, but such a cringe worthy past!)#Kid_default
 Agent X: Tell me more about yourself. You are the first one to find me! I can't imagine anyone else except myself to know Bernard. I must have heard my future self talking to me!#Kid_smile
-(Was I so loud and fussy back then?)#Class:Purple
+(Was I so loud and fussy back then?)#Class:Purple#Kid_smile
 Ermm...I'm an engineer. #Kid_default
-Agent X: What is enginger?
+Agent X: What is enginger?#Kid_speechless
 ......You can understand engineer as a more practical scientist.#Kid_smile
-Cool! I've always dreamt to be a scientist!
-(This sounds like everyone's first dream since young, and 99% will give up, including yourself. You shrugged with a resigned smile)#Class:Purple
-Agent X: Thanks for responding me! Now it's your turn. You can ask me anything - as a reward for rescuing Agent X from the evil dyrad!
-*He's Bernard, not a evil dyrad or anything like that...
-Agent X: Hoho, Bernard is so kind that he willingly accepted the character assignment of the evil dyrad! Let's give him a round of applause, for his fantastic performance!
-    **Clap for Bernard
+Agent X: Cool! I've always dreamt to be a scientist!#Kid_smile
+(This sounds like everyone's first dream since young, and 99% will give up, including yourself. You shrugged with a resigned smile)#Class:Purple#Kid_smile
+Agent X: Thanks for responding me! Now it's your turn. You can ask me anything - as a reward for rescuing Agent X from the evil dyrad!#Kid_smile
+*He's Bernard, not a evil dyrad or anything like that...#Kid_smile
+Agent X: Hoho, Bernard is so kind that he willingly accepted the character assignment of the evil dyrad! Let's give him a round of applause, for his fantastic performance!#Kid_smile
+    **Clap for Bernard#Kid_smile
     ~KidAffinity++
-    Agent X: Three cheers for Bernard!
-        ***Three cheers for Bernard!
-        Agent X: Encore!
+    Agent X: Three cheers for Bernard!#Kid_smile
+        ***Three cheers for Bernard!#Kid_smile
+        Agent X: Encore!#Kid_smile
         ~KidAffinity++
-            ****Encore!
+            ****Encore!#Kid_smile
             ~KidAffinity++
             You are funny! Why you dumbly follow whatever I say?#Kid_smile
-            *****Because I care for you.
-            Agent X: That is disgustingly heart-warming. Alright, adult, thank you for that. #Kid_smile
+            *****Because I care for you.#Kid_smile
+            Agent X: That is disgustingly heart-warming. Alright, adult, thank you for that. #Kid_speechless
             ~KidAffinity++
             ->AfterKidAffinity
-            *****Coz I'm a dumbass. 
-            Agent X: (Laugh out loud) That's so funny! You are nothing like the adults around me. I like you.
+            *****Coz I'm a dumbass. #Kid_smile
+            Agent X: (Laugh out loud) That's so funny! You are nothing like the adults around me. I like you.#Kid_smile
             ~KidAffinity=KidAffinity+2
             ->AfterKidAffinity
         ***Nope, that's all.
         Agent X: Alright. You are the adult. You have the say.#Kid_sad
         ->AfterKidAffinity
-    **Errr, that's so embarrassing.
-    Agent X: Alright. You are right. #Kid_sad
+    **Errr, that's so embarrassing.#Kid_angry
+    Agent X: Alright. You are right. #Kid_angry
     ->AfterKidAffinity
 
 *I know everything about you, little one, what should I ask?#Class:Blue
-Agent X: I bet you never know at least one thing.I have not told anyone.#Teen_default
+Agent X: I bet you never know at least one thing.I have not told anyone.#Kid_default
 (You searched in your memory, trying to find anything that you felt to be important yet never shared with anyone.)#Class:Purple
-Agent X: Do you know why Bernard is an evil dyrad?
-(You really don't know that. You remember Bernard as a generic and remote concept, a symbolic item that signifies your childhood. Everyone might have such a symbolic memory - a doll, a pet, or a friend. You cannot remember the exact occurrences, but you treat them as a collection of reminiscences.)#Class:Purple 
-What do you hide from me?#Class:Blue
+Agent X: Do you know why Bernard is an evil dyrad?#Kid_smile
+(You really don't know that. You remember Bernard as a generic and remote concept, a symbolic item that signifies your childhood. Everyone might have such a symbolic memory - a doll, a pet, or a friend. You cannot remember the exact occurrences, but you treat them as a collection of reminiscences.)#Class:Purple #Kid_smile
+What do you hide from me?#Class:Blue#Kid_smile
 Agent X: If I tell you, a secret counts no more. #Kid_smile
-(A rare period of silence. Agent X shuts her mouth tight, as if keeping a confidential info that might threaten her supernatural institution. You know you will never know the story of Bernard. One day, you will forget the name Bernard. When that happens, you won’t even notice what else has disappeared with it )#Class:Purple
+(A rare period of silence. Agent X shuts her mouth tight, as if keeping a confidential info that might threaten her supernatural institution. You know you will never know the story of Bernard. One day, you will forget the name Bernard. When that happens, you won’t even notice what else has disappeared with it )#Class:Purple#Kid_smile
 
 ->AfterKidAffinity
 
 =AfterKidAffinity
-(It is already 11PM. You have to go back to work. You are left with two days to new year, and your progress is really worrying.)#Class:Purple
-*Kid, listen, I have to go back to work.#Class:Blue
+(It is already 11PM. You have to go back to work. You are left with two days to new year, and your progress is really worrying.)#Class:Purple#Kid_smile
+*Kid, listen, I have to go back to work.#Class:Blue#Kid_smile
 Agent X: Can't you just spend more time with me?#Kid_sad
-I can't, I'm already spending longer than I supposed to be. #Class:Blue
-Agent X: Would you answer my last question?
+I can't, I'm already spending longer than I supposed to be. #Class:Blue#Kid_sad
+Agent X: Would you answer my last question?#Kid_sad
 
-Agent X: What does it mean to grow up?
-    Growing up means taking on responsibilities, and giving up on unrealistic ideals.
+Agent X: What does it mean to grow up?#Kid_sad
+    Growing up means taking on responsibilities, and giving up on unrealistic ideals.#Kid_sad
     Agent X: I'm going to school tomorrow.#Kid_default#Class:Blue
-    ***What does that mean?#Class:Blue
+    ***What does that mean?#Class:Blue#Kid_default
     Agent X: Does that mean I will grow up?#Kid_sad
-    **** Life is far longer than you think.#Class:Blue
-    Agent X: How long will it take to grow up?
-    (You really don't know how to answer. It feels like your life has been stagnant for all this while. You are not sure if you are in your ultimate stage of growth, or you are stuck somewhere before that growth really happens.)#Class:Purple
+    **** Life is far longer than you think.#Class:Blue#Kid_default
+    Agent X: How long will it take to grow up?#Kid_default
+    (You really don't know how to answer. It feels like your life has been stagnant for all this while. You are not sure if you are in your ultimate stage of growth, or you are stuck somewhere before that growth really happens.)#Class:Purple#Kid_default
     ->KidAffinityReach
-    **** Yes, it's a beginning of your growth.#Class:Blue
-    (To you, growth is a process, growing up is a spectrum. Perhaps a beginning happens even earlier than her first day in school. It might have happened since the moment the question is asked.)#Class:Purple
+    **** Yes, it's a beginning of your growth.#Class:Blue#Kid_default
+    (To you, growth is a process, growing up is a spectrum. Perhaps a beginning happens even earlier than her first day in school. It might have happened since the moment the question is asked.)#Class:Purple#Kid_default
     ->KidAffinityReach
-    ***You are prepared, believe in yourself.#Class:Blue
-    (This is just a useless encouragement. A white lie. Only you know how tough it was for a village girl.)#Class:Purple
+    ***You are prepared, believe in yourself.#Class:Blue#Kid_default
+    (This is just a useless encouragement. A white lie. Only you know how tough it was for a village girl.)#Class:Purple#Kid_default
     ->KidAffinityReach
 
     
 
 =KidAffinityReach
-Agent X: Will we meet again? Do you have anything else to say to me?#Teen_default
-*Best of luck. I will go back to work.#Class:Blue
+Agent X: Will we meet again? Do you have anything else to say to me?#Kid_default
+*Best of luck. I will go back to work.#Class:Blue#Kid_default
 ->AfterWork
-*{KidAffinity>3} I want to ask you a question.#Class:Blue
-    (You still remember that first day. In River Ville, parents do not have any awareness for pre-education. Basically you just go to school like a blank piece of paper. )#Class:Purple
-    (There is a shuttle between River Ville and Rock Town. Every day you need to take that bus at 5:30AM, and reach school at 7:00AM for flag-raising ceremony.)#Class:Purple
-    (This was a facility provided by the town to support the underdeveloped River Ville. Luckily you have Patty back then, life wasn't that hard.)#Class:Purple
-    (But you somehow find something missing deep in your heart. Like a missing jigsaw piece that does not really affect the full pattern.)#Class:Purple
-    What is the first thing you want to do after you go to school and study things new?#Class:Blue
-    (She remains silent with contemplation. After a while, she speaks with a sense of seriousness.)#Class:Purple#Teen_default
-Agent X: I want to write out the stories between me and Bernard, as a record of our friendship, before he loses me or I loses him.#Teen_smile
-Agent X: Oh, Bernard is calling me. Byebye!
+*{KidAffinity>3} I want to ask you a question.#Class:Blue#Kid_default
+    (You still remember that first day. In River Ville, parents do not have any awareness for pre-education. Basically you just go to school like a blank piece of paper. )#Class:Purple#Kid_default
+    (There is a shuttle between River Ville and Rock Town. Every day you need to take that bus at 5:30AM, and reach school at 7:00AM for flag-raising ceremony.)#Class:Purple#Kid_default
+    (This was a facility provided by the town to support the underdeveloped River Ville. Luckily you have Patty back then, life wasn't that hard.)#Class:Purple#Kid_default
+    (But you somehow find something missing deep in your heart. Like a missing jigsaw piece that does not really affect the full pattern.)#Class:Purple#Kid_default
+    What is the first thing you want to do after you go to school and study things new?#Class:Blue#Kid_default
+    (She remains silent with contemplation. After a while, she speaks with a sense of seriousness.)#Class:Purple#Kid_default
+Agent X: I want to write out the stories between me and Bernard, as a record of our friendship, before he loses me or I loses him.#Kid_smile
+Agent X: Oh, Bernard is calling me. Byebye!#Kid_smile
 (She left, as if she will see you tomorrow. )#Class:Purple
 (Yes, a story. She wanted to write a story. And that notebook was confiscated during class when she was doodling herself hiding in the tree hole."Be realistic!" Teacher said in a harsh tone.)#Class:Purple
 (That was the last story she wrote, and Bernard was dead soon after she stopped writing. He was really an old tree with fragile structure, at the age of 30, you can tell it was natural. But Agent X couldn't. She thought it was her fault.)#Class:Purple
