@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MusicManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class MusicManager : MonoBehaviour
     public AudioClip song1;
     public AudioClip song2;
     public AudioClip song3;
-
+    public AudioMixerGroup mixerGroup;
     public float fadeDuration = 2f;
 
     private AudioSource audioSource;
@@ -27,6 +28,7 @@ public class MusicManager : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.loop = true;
         audioSource.playOnAwake = false;
+        audioSource.outputAudioMixerGroup = mixerGroup;
     }
 
     public void PlaySong(int index)
@@ -42,7 +44,6 @@ public class MusicManager : MonoBehaviour
         if (clip == null) return;
 
         audioSource.clip = clip;
-        audioSource.volume = 1f;
         audioSource.Play();
 
         if (GameStateManager.Instance != null)
