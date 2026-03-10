@@ -38,7 +38,7 @@ public class GameStateManager : MonoBehaviour
     public string EndingPicture = "";
     public string EndingStoryState = "";
     public string InkJSONText = "";
-
+    public string PostEasterEggScene = "DayTwo"; // default fallback
 
     private void Awake()
     {
@@ -152,6 +152,7 @@ public class GameStateManager : MonoBehaviour
         EndingPicture = "";
         EndingStoryState = "";
         InkJSONText = "";
+        PostEasterEggScene = "DayTwo";
     }
 
 }
