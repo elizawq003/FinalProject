@@ -287,8 +287,11 @@ MonoBehaviour:
   defaultColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
   blueColor: {r: 0.36, g: 0.61, b: 0.84, a: 1}
   purpleColor: {r: 0.7, g: 0.5, b: 0.85, a: 1}
-  adultDefault: {fileID: 21300000, guid: 8b3c22a5b06f4da4d991fb453745b991, type: 3}
-  adultSmile: {fileID: 21300000, guid: e9b5311fb5f600d44a5c6cefaefcc6c6, type: 3}
+  adultDefault: {fileID: 21300000, guid: 18c26bae8d1571d4ea5207d85dfe5656, type: 3}
+  adultSmile: {fileID: 21300000, guid: 874f313e0d8bc3545901cef93ede9f29, type: 3}
+  adultSad: {fileID: 21300000, guid: 284b6a2a7c452f444b7c60ff5dc13b51, type: 3}
+  adultAngry: {fileID: 21300000, guid: 25b65c6f11754c24b8140b3324cbc066, type: 3}
+  adultSpeechless: {fileID: 21300000, guid: acdfa36759a65dd4190e622dd9e47cba, type: 3}
   backgroundImage: {fileID: 968712053}
   videoRawImage: {fileID: 968712052}
   videoPlayer: {fileID: 968712051}
@@ -511,8 +514,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5305928552032124596, guid: 2b4f460587e7244b9a823f4b094a72f5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -343
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305928552032124596, guid: 2b4f460587e7244b9a823f4b094a72f5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 196
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 6113476699864909198, guid: 2b4f460587e7244b9a823f4b094a72f5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1070,8 +1077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 896.11, y: -962}
-  m_SizeDelta: {x: 1919.8, y: 414.113}
+  m_AnchoredPosition: {x: 959.92, y: -893.3648}
+  m_SizeDelta: {x: 1957.927, y: 454.783}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1562198397
 MonoBehaviour:
