@@ -700,9 +700,9 @@ Who are you?#Class:Blue
 HEHEHEHEHE!!!
 (Pretentious evil laughter like the villain in comics. Seriously?!)#Class:Purple
 ??:Tada! Surprise!
-(WHAT? Isn't that Betty, the doll that Patty gave you as a Christmas gift and you accidentally lost her during your transit to Light City?)#Class:Purple #Doll_default
-(You used to like Betty very much. Patty and you used Betty and her doll Mary to play house. You leaked some of your stories with Bernard during your play. Shhh... You will never let Bernard know.)#Class:Purple#Doll_default
-Betty: I come just to let you know, Patty missed you, but she's too shy to let you know. So I'll do her a favor to inform you.#Doll_default
+(WHAT? Isn't that Betty, the doll that Patty gave you as a Christmas gift and you accidentally lost her during your transit to Light City?)#Class:Purple #Betty_default
+(You used to like Betty very much. Patty and you used Betty and her doll Mary to play house. You leaked some of your stories with Bernard during your play. Shhh... You will never let Bernard know.)#Class:Purple#Betty_default
+Betty: I come just to let you know, Patty missed you, but she's too shy to let you know. So I'll do her a favor to inform you.#Betty_default
 ~Friend++
 ~DOS++
 (She vanishes without a trace. OK, maybe you'll find some time to contact Patty.)

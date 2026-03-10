@@ -37,7 +37,7 @@ public class SnackPickerUI : MonoBehaviour
 
     [Header("Play Button")]
     public Button playButton;
-    public string nextSceneName = "NPCScene";
+    //public string nextSceneName = "NPCScene";
 
     [Header("Optional")]
     public TextMeshProUGUI selectedSnackLabel;
@@ -168,7 +168,7 @@ public class SnackPickerUI : MonoBehaviour
             return;
         }
 
-        SceneManager.LoadScene(nextSceneName);
+        //SceneManager.LoadScene(nextSceneName);
     }
 
     private void ResetLabel()

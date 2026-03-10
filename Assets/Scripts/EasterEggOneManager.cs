@@ -23,6 +23,7 @@ public class EasterEggOneManager : MonoBehaviour
     [SerializeField] private Color purpleColor = new Color(0.7f, 0.5f, 0.85f, 1f);
 
     [SerializeField] private Sprite catSprite;
+    [SerializeField] private Sprite dollSprite;
 
     private Story inkStory;
     private List<GameObject> spawnedChoices = new List<GameObject>();
@@ -36,6 +37,8 @@ public class EasterEggOneManager : MonoBehaviour
         portraitMap = new Dictionary<string, Sprite>
         {
             { "Cat", catSprite },
+            //{ "Doll", dollSprite },
+            { "Betty", dollSprite }
         };
 
         InitializeInk();
