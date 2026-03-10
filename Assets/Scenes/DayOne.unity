@@ -210,6 +210,7 @@ MonoBehaviour:
   bgRoom2: {fileID: 21300000, guid: 7d21e11fb071d5d4280a0ade0d3e321c, type: 3}
   bgCityLight: {fileID: 21300000, guid: d5ba5320ce85a0f49b125fa912124fb4, type: 3}
   bgStarryNight: {fileID: 21300000, guid: acd6c463a4147c9408646ec2f8518efb, type: 3}
+  bgOriginalRoom: {fileID: 0}
   typewriterSpeed: 0.03
 --- !u!1 &519420028
 GameObject:
@@ -502,8 +503,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.010471, y: -346.139}
-  m_SizeDelta: {x: 1792.2, y: 464.722}
+  m_AnchoredPosition: {x: -0.000025349, y: -346.14}
+  m_SizeDelta: {x: 1919.8, y: 464.722}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104789486
 MonoBehaviour:
@@ -557,7 +558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1502309447107280578, guid: 42112ccb1e400469aac7131d0d0ad3ee, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3771546704153783952, guid: 42112ccb1e400469aac7131d0d0ad3ee, type: 3}
       propertyPath: m_Pivot.x

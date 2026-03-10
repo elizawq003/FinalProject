@@ -57,6 +57,7 @@ public class DayOneManager : MonoBehaviour
     [SerializeField] private Sprite bgRoom2;
     [SerializeField] private Sprite bgCityLight;
     [SerializeField] private Sprite bgStarryNight;
+    [SerializeField] private Sprite bgOriginalRoom;
     //[SerializeField] private Sprite bgPhoneInterface;
     
 
@@ -86,6 +87,7 @@ public class DayOneManager : MonoBehaviour
             { "Picture_Room2", bgRoom2 },
             { "Picture_CityLight", bgCityLight },
             { "Picture:StarryNight", bgStarryNight },
+                { "Picture:OriginalRoom", bgOriginalRoom },
             //{ "Picture:PhoneInterfacewithWords", bgPhoneInterface },
         };
 

@@ -57,6 +57,8 @@ public class DayTwoSceneManager : MonoBehaviour
     [SerializeField] private Sprite kidDefault;
     [SerializeField] private Sprite kidSmile;
     [SerializeField] private Sprite kidSad;
+    [SerializeField] private Sprite kidAngry;
+    [SerializeField] private Sprite kidSpeechless;
 
 
     [SerializeField] private Image backgroundImage;
@@ -95,6 +97,9 @@ public class DayTwoSceneManager : MonoBehaviour
             { "Kid_default", kidDefault },
             { "Kid_smile", kidSmile },
             { "Kid_sad", kidSad },
+            { "Kid_angry", kidAngry },
+            { "Kid_speechless", kidSpeechless },
+
         };
 
         // Background lookup
