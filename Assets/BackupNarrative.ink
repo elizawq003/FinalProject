@@ -431,7 +431,7 @@ Agent X: Hoho, Bernard is so kind that he willingly accepted the character assig
             ~KidAffinity=KidAffinity+2
             ->AfterKidAffinity
         ***Nope, that's all.
-        Agent X: Alright. You are the adult. You have the say.#Kid_sad
+        Agent X: Alright. You are the adult. You have the say.#Kid_speechless
         ->AfterKidAffinity
     **Errr, that's so embarrassing.#Kid_angry
     Agent X: Alright. You are right. #Kid_angry
@@ -452,11 +452,11 @@ Agent X: If I tell you, a secret counts no more. #Kid_smile
 (It is already 11PM. You have to go back to work. You are left with two days to new year, and your progress is really worrying.)#Class:Purple#Kid_smile
 *Kid, listen, I have to go back to work.#Class:Blue#Kid_smile
 Agent X: Can't you just spend more time with me?#Kid_sad
-I can't, I'm already spending longer than I supposed to be. #Class:Blue#Kid_sad
-Agent X: Would you answer my last question?#Kid_sad
+I can't, I'm already spending longer than I supposed to be. #Class:Blue#Kid_default
+Agent X: Would you answer my last question?#Kid_default
 
-Agent X: What does it mean to grow up?#Kid_sad
-    Growing up means taking on responsibilities, and giving up on unrealistic ideals.#Kid_sad
+Agent X: What does it mean to grow up?#Kid_default
+    Growing up means taking on responsibilities, and giving up on unrealistic ideals.#Kid_default
     Agent X: I'm going to school tomorrow.#Kid_default#Class:Blue
     ***What does that mean?#Class:Blue#Kid_default
     Agent X: Does that mean I will grow up?#Kid_sad
@@ -550,10 +550,11 @@ Margaret: Hope that by the time we come back to Light City, the weather here wil
 (Definitely. Everything is for that better life.)#Class:Purple#Adult_default
 Margaret: So I can't think of a reason that you do not want to fix that bug. If you can eliminate winter for yourself, you should also have no mercy to eliminate that last piece of night in the city.#Adult_smile
 * That is different. The train station means something to me. #Adult_default
-Margaret: Winter can also mean something to others. #Adult_default
+Margaret: Winter can also mean something to others. #Adult_speechless
 ** I live for myself, and that's how I survived.#Adult_default
 Margaret: How blunt, I like that. This is not something you should be shameful about. It was your determination to leave your parents alone that brought you all the way here, and you don't need to perform that hypocritical justice.#Adult_smile
 (You look at the screen. There's still around one hour and a half for decision making. But you have waited for this moment for so long. It was that thrilling excitement that keeps you from pushing the change.)#Adult_smile
+->Ending1
 {Repulsion==3:
 But all of a sudden, you feel that all this while you've been persuading yourself to perform an identity. 
 (Margaret looking into your eyes with that professional half-smile. You shiver as you realize how she looks different from how you perceive yourself.)#Adult_smile
@@ -564,39 +565,27 @@ But all of a sudden, you feel that all this while you've been persuading yoursel
 }
 
 =Choice1
-(Luckily, you still have a chance to revert it all back.)#Adult_smile
+(Luckily, you still have a chance to revert it all back.)#Adult_sad
 *{Repulsion==3}Crash the code, and save the darkness.
 ->Ending0
-*{Repulsion==3}Don't mind the intrusive thoughts. Be yourself.
+*{Repulsion==3}Don't mind the intrusive thoughts. Be yourself.#Adult_angry
 ->Ending1
 
 
-** ......You are right to say so.
-Margaret: If you can eliminate things that are meaningful to others, why would you preserve something meaningful to you?
-*** If losing the last piece of night from the city, the only piece of me remaining in the city will be gone.
-(You reached Light City late in the night. When the train ringed the bell and left for the next destination, passengers went down from the platform, their back view blend into the light in the station... At the age of 15, you had a strong impulse to stay.)#type_animation
-(The soft glow in the station is close within a reach, but you hesitated to enter. The station is like a "light hole" where no darkness can escape, nor things related to darkness - the loneliness, nostalgia, solitude.)#Picture:Station#type_animation
-(You stepped back from the edge. You sat at the bench beside the rail. Summer breeze gently stroked your face. You suddenly miss home so much. The station shared the same stars with River Ville. That was 11:59PM, just before the last bus to the city set off.)#Picture:Station #type_animation
-(11:59PM. Time for a decision.)#type_animation
-****Preserve the darkness
-->Ending2
-****Press the button
-->Ending1
-*** I would never hesitate anymore. I will press the button.
-->Ending1
+
 
 
 =PreserveWinter
 Margaret: (Chuckling) You are always like this. Say one thing and mean another.#Adult_smile
-What else are you referring to?#Class:Blue
+What else are you referring to?#Class:Blue#Adult_smile
 {Dream>3:
-(She looks into your eyes, silently. Through that scrutiny you slowly recall everything that you once sacrificed everything to escape from yet always revisited: River Ville, the train station, your old friend, old dream, and the nights.)#type_animation
+(She looks into your eyes, silently. Through that scrutiny you slowly recall everything that you once sacrificed everything to escape from yet always revisited: River Ville, the train station, your old friend, old dream, and the nights.)#Adule_smile#Class:Purple
 {DOL>3:
-(And you ask yourself a question: If something evil ever happens in your Light City, just in that deserted train station you deliberately preserve, will you be guilty for that? #type_animation
+(And you ask yourself a question: If something evil ever happens in your Light City, just in that deserted train station you deliberately preserve, will you be guilty for that? )#Adult_smile#Class:Purple
 }
-*{DOL>3}I will preserve the nights.
+*{DOL>3}I will preserve the nights.#Class:Blue
 ->Ending3
-*{DOL>3}I will preserve the light.
+*{DOL>3}I will preserve the light.#Class:Blue
 ->Ending4
 
 But does that established vision really worth your sacrifice? Standing just before a new beginning, should it be a turning point for your new life?

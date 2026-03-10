@@ -49,6 +49,9 @@ public class DayThreeSceneManager : MonoBehaviour
 
     [SerializeField] private Sprite adultDefault;
     [SerializeField] private Sprite adultSmile;
+    [SerializeField] private Sprite adultSad;
+    [SerializeField] private Sprite adultAngry;
+    [SerializeField] private Sprite adultSpeechless;
 
     [SerializeField] private Image backgroundImage;
 
@@ -113,6 +116,9 @@ public class DayThreeSceneManager : MonoBehaviour
         {
             { "Adult_default", adultDefault },
             { "Adult_smile", adultSmile },
+            { "Adult_sad", adultSad },
+            { "Adult_angry", adultAngry },
+            { "Adult_speechless", adultSpeechless },
         };
 
         pictureMap = new Dictionary<string, Sprite>
