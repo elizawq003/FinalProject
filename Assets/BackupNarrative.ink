@@ -580,6 +580,11 @@ Margaret: (Chuckling) You are always like this. Say one thing and mean another.#
 What else are you referring to?#Class:Blue#Adult_smile
 {Dream>3:
 (She looks into your eyes, silently. Through that scrutiny you slowly recall everything that you once sacrificed everything to escape from yet always revisited: River Ville, the train station, your old friend, old dream, and the nights.)#Adule_smile#Class:Purple
+->DreamSection
+}
+->Preend
+
+=DreamSection
 {DOL>3:
 (And you ask yourself a question: If something evil ever happens in your Light City, just in that deserted train station you deliberately preserve, will you be guilty for that? )#Adult_smile#Class:Purple
 }
@@ -593,7 +598,9 @@ But does that established vision really worth your sacrifice? Standing just befo
 ->Ending6
 * I have to make a change.
 ->Ending5
-}
+
+
+=Preend
 She never responds back. As though she does not have an answer.#type_animation
 You have so many similar moments in the past of your life, standing at the crossroads and thinking whether ten years later you will be regretted for any of your choice today.#type_animation
 But you never know. You just never know. #type_animation
