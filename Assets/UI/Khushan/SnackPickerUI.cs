@@ -14,7 +14,7 @@ public class SnackPickerUI : MonoBehaviour
     public Button cheesecake;
     public Button dumpling;
     public Button burger;
-    public Button iceCream;
+    public Button hotdog;
 
     [Header("Drink Buttons")]
     public Button hotChocolate;
@@ -25,7 +25,7 @@ public class SnackPickerUI : MonoBehaviour
     public Sprite cheesecakeSprite;
     public Sprite dumplingSprite;
     public Sprite burgerSprite;
-    public Sprite iceCreamSprite;
+    public Sprite hotdogSprite;
 
     [Header("Drink Sprites")]
     public Sprite hotChocolateSprite;
@@ -54,7 +54,7 @@ public class SnackPickerUI : MonoBehaviour
         if (cheesecake) cheesecake.onClick.AddListener(() => SelectSnack(cheesecake, cheesecakeSprite, "Cheesecake"));
         if (dumpling)   dumpling.onClick.AddListener(()   => SelectSnack(dumpling,   dumplingSprite,   "Dumpling"));
         if (burger)     burger.onClick.AddListener(()     => SelectSnack(burger,     burgerSprite,     "Burger"));
-        if (iceCream)   iceCream.onClick.AddListener(()   => SelectSnack(iceCream,   iceCreamSprite,   "Ice Cream"));
+        if (hotdog)     hotdog.onClick.AddListener(()     => SelectSnack(hotdog,     hotdogSprite,     "Hot Dog"));
 
         // Drink listeners
         if (hotChocolate) hotChocolate.onClick.AddListener(() => SelectDrink(hotChocolate, hotChocolateSprite, "Hot Chocolate"));
@@ -116,7 +116,7 @@ public class SnackPickerUI : MonoBehaviour
     private void RefreshHighlights()
     {
         // Snack group
-        Button[] snacks = { popcorn, cheesecake, dumpling, burger, iceCream };
+        Button[] snacks = { popcorn, cheesecake, dumpling, burger, hotdog };
         foreach (var btn in snacks)
         {
             if (btn == null) continue;

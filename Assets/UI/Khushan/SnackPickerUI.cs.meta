@@ -3,7 +3,25 @@ guid: 4444b8e7821864073848624ad2353c7e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - snackOnDeskImage: {instanceID: 0}
+  - drinkOnDeskImage: {instanceID: 0}
+  - popcorn: {instanceID: 0}
+  - cheesecake: {instanceID: 0}
+  - dumpling: {instanceID: 0}
+  - burger: {instanceID: 0}
+  - hotdog: {instanceID: 0}
+  - hotChocolate: {instanceID: 0}
+  - coffee: {instanceID: 0}
+  - popcornSprite: {instanceID: 0}
+  - cheesecakeSprite: {instanceID: 0}
+  - dumplingSprite: {instanceID: 0}
+  - burgerSprite: {instanceID: 0}
+  - hotdogSprite: {fileID: 21300000, guid: b974ac33f3ea94b3f99d93a75c30959a, type: 3}
+  - hotChocolateSprite: {instanceID: 0}
+  - coffeeSprite: {instanceID: 0}
+  - playButton: {instanceID: 0}
+  - selectedSnackLabel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
