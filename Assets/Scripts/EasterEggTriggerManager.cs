@@ -6,8 +6,8 @@ public class EasterEggTriggerManager : MonoBehaviour
     public static EasterEggTriggerManager Instance { get; private set; }
 
     [Header("Scene Names")]
-    public string easterEgg1Scene = "EasterEgg1";
-    public string easterEgg2Scene = "EasterEgg2";
+    public string easterEgg1Scene = "EsterEgg1";
+    public string easterEgg2Scene = "EsterEgg2";
     public string day1Scene = "DayOne";
     public string day2Scene = "DayTwo";
     public string day3Scene = "DayThree";

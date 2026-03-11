@@ -25,8 +25,8 @@ public class EndingSceneManager : MonoBehaviour
     [SerializeField] private GameObject endingPanel;
     [SerializeField] private TextMeshProUGUI endingTitleText;
     [SerializeField] private Image backgroundImage;
-    [SerializeField] private UnityEngine.UI.Button nextButton;
-    [SerializeField] private TextMeshProUGUI nextButtonText;
+    [SerializeField] private UnityEngine.UI.Button replayButton;
+    [SerializeField] private TextMeshProUGUI replayButtonText;
 
     //background
     [SerializeField] private Sprite bgDesertedStation;
@@ -67,7 +67,9 @@ public class EndingSceneManager : MonoBehaviour
     private CanvasGroup endingCanvasGroup;
 
     void Start()
+
     {
+        
         pictureMap = new Dictionary<string, Sprite>
         {
             { "Picture:DesertedStation", bgDesertedStation },
@@ -103,8 +105,8 @@ public class EndingSceneManager : MonoBehaviour
         // Phase 1 visible, Phase 2 hidden
         dialogPanel.SetActive(true);
         endingPanel.SetActive(false);
-        nextButton.gameObject.SetActive(false);
-        nextButton.onClick.AddListener(OnNextClicked);
+        replayButton.gameObject.SetActive(false);
+        replayButton.onClick.AddListener(OnReplayClicked);
 
         // Start music immediately when reach ending scene
         // Play music from stored tag
@@ -251,8 +253,8 @@ public class EndingSceneManager : MonoBehaviour
     {
         dialogPanel.SetActive(false);
         endingPanel.SetActive(true);
-        nextButton.gameObject.SetActive(true);
-        nextButtonText.text = "Next";
+        replayButton.gameObject.SetActive(true);
+        replayButtonText.text = "Replay";
         yield return null;
     }
 
@@ -271,8 +273,16 @@ public class EndingSceneManager : MonoBehaviour
         text.color = targetColor;
     }
 
-    private void OnNextClicked()
+    private void OnReplayClicked()
     {
-        SceneManager.LoadScene("Credits");
+        // Kill the persistent MusicManager so it doesn't interfere
+        if (MusicManager.Instance != null)
+        {
+            Destroy(MusicManager.Instance.gameObject);
+        }
+
+        GameStateManager.Instance.ResetAll();
+        SaveManager.DeleteSave();
+        SceneManager.LoadScene("OpeningScene");
     }
 }
