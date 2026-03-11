@@ -351,20 +351,19 @@ MonoBehaviour:
   cheesecake: {fileID: 442266639}
   dumpling: {fileID: 530277376}
   burger: {fileID: 1980914886}
-  iceCream: {fileID: 103052376}
+  hotdog: {fileID: 103052376}
   hotChocolate: {fileID: 2135509207}
   coffee: {fileID: 1302499961}
   popcornSprite: {fileID: 21300000, guid: 291b01eb5b87047fdb28989535a3e1db, type: 3}
   cheesecakeSprite: {fileID: 21300000, guid: 361b32d72cd5a4c4f8eb833158269863, type: 3}
   dumplingSprite: {fileID: 21300000, guid: b04a67b51484b4af4b8a8ce8c0a68e51, type: 3}
   burgerSprite: {fileID: 21300000, guid: c692b47177e304d6e9474f36edc4f4ef, type: 3}
-  iceCreamSprite: {fileID: 21300000, guid: 3cdbd013b256f4018ad07fa8912c3301, type: 3}
+  hotdogSprite: {fileID: 21300000, guid: b974ac33f3ea94b3f99d93a75c30959a, type: 3}
   hotChocolateSprite: {fileID: 21300000, guid: 81cad3a89174648f0b14952009c197ab, type: 3}
   coffeeSprite: {fileID: 21300000, guid: 2fc343b0bf7b04268875cdc2d6ac71d7, type: 3}
   selectedColor: {r: 0.7, g: 0.6, b: 1, a: 1}
   unselectedColor: {r: 1, g: 1, b: 1, a: 1}
   playButton: {fileID: 1160598745}
-  nextSceneName: NPCScene
   selectedSnackLabel: {fileID: 0}
 --- !u!114 &90922344
 MonoBehaviour:
@@ -396,7 +395,7 @@ GameObject:
   - component: {fileID: 103052374}
   - component: {fileID: 103052376}
   m_Layer: 0
-  m_Name: burger
+  m_Name: hotdog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3130,7 +3129,7 @@ GameObject:
   - component: {fileID: 1980914884}
   - component: {fileID: 1980914886}
   m_Layer: 0
-  m_Name: Burger
+  m_Name: burger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
