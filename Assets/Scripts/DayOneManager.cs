@@ -260,6 +260,7 @@ public class DayOneManager : MonoBehaviour
 
                 // Wait for Enter key to advance to next line
                 yield return new WaitUntil(() =>
+                    !SettingsPanelUI.IsPaused &&
                     Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter));
 
                 // Wait one frame to prevent double-advance
@@ -337,6 +338,8 @@ public class DayOneManager : MonoBehaviour
     // Called when the player clicks one of the choice buttons
     private void OnChoiceSelected(int index)
     {
+        if (SettingsPanelUI.IsPaused) return;
+
         // Tell the Ink story which path the player selected
         inkStory.ChooseChoiceIndex(index);
 
