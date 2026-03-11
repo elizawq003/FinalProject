@@ -380,6 +380,7 @@ public class DayThreeSceneManager : MonoBehaviour
                     GameStateManager.Instance.InkJSONText = inkJSONAsset.text;
 
                     Debug.Log($"=== Ending: {endingName} — loading Ending scene ===");
+                    MusicManager.Instance?.FadeOutAndStop();
                     SceneManager.LoadScene("Ending");
                     yield break;
                 }
@@ -399,6 +400,7 @@ public class DayThreeSceneManager : MonoBehaviour
             else
             {
                 Debug.Log("End of story reached.");
+                MusicManager.Instance?.FadeOutAndStop();
                 GameStateManager.Instance.SyncFromInk(inkStory);
                 SceneManager.LoadScene("Ending");
                 yield break;
