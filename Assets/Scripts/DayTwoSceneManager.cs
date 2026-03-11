@@ -336,6 +336,7 @@ public class DayTwoSceneManager : MonoBehaviour
             _pendingTags = null;
 
             yield return new WaitUntil(() =>
+                !SettingsPanelUI.IsPaused &&
                 Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter));
             yield return null;
         }
@@ -363,6 +364,7 @@ public class DayTwoSceneManager : MonoBehaviour
 
                 // Wait for Enter key
                 yield return new WaitUntil(() =>
+                    !SettingsPanelUI.IsPaused &&
                     Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter));
                 yield return null;
             }
@@ -528,6 +530,8 @@ public class DayTwoSceneManager : MonoBehaviour
 
     private void OnChoiceSelected(int index)
     {
+        if (SettingsPanelUI.IsPaused) return;
+
         inkStory.ChooseChoiceIndex(index);
 
         foreach (GameObject btn in spawnedChoices)
