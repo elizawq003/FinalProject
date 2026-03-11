@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 621.5, y: -304.00003}
+  m_AnchoredPosition: {x: 621.5, y: -319}
   m_SizeDelta: {x: 1143, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245348
@@ -488,8 +488,8 @@ MonoBehaviour:
   endingPanel: {fileID: 1808230936}
   endingTitleText: {fileID: 1353147195}
   backgroundImage: {fileID: 1945542655}
-  nextButton: {fileID: 1107556789}
-  nextButtonText: {fileID: 2016278532}
+  replayButton: {fileID: 1107556789}
+  replayButtonText: {fileID: 2016278532}
   bgDesertedStation: {fileID: 21300000, guid: 233051006daecd948ac8d6ec3e1864c3, type: 3}
   bgPromotion: {fileID: 21300000, guid: 75684fc7b01c4ef46a6df1339ed471d1, type: 3}
   bgStarrySky: {fileID: 21300000, guid: 8137df880e812457fae51fcbc6db2b14, type: 3}
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 1107556787}
   - component: {fileID: 1107556789}
   m_Layer: 0
-  m_Name: NextButton
+  m_Name: ReplayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1220,10 +1220,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next
+  m_text: Replay
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2016278533

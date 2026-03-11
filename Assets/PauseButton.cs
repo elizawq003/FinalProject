@@ -7,19 +7,29 @@ public class PauseButton : MonoBehaviour
     public Button pauseButton;
     public TextMeshProUGUI buttonText;
 
-    private bool _isPaused = false;
+    //private bool _isPaused = false;
+
+    public static bool IsPaused { get; private set; } = false;
 
     private void Start()
     {
         pauseButton.onClick.AddListener(TogglePause);
     }
 
-    private void TogglePause()
+    public void TogglePause()
     {
-        _isPaused = !_isPaused;
-        Time.timeScale = _isPaused ? 0f : 1f;
+        IsPaused = !IsPaused;
+        Time.timeScale = IsPaused ? 0f : 1f;
         if (buttonText != null)
-            buttonText.text = _isPaused ? "Resume" : "Pause";
-        Debug.Log($"Game paused: {_isPaused}");
+            buttonText.text = IsPaused ? "Resume" : "Pause";
+
+        // Pause / unpause the music
+        if (MusicManager.Instance != null)
+        {
+            if (IsPaused) MusicManager.Instance.PauseMusic();
+            else MusicManager.Instance.UnPauseMusic();
+        }
+
+        Debug.Log($"Game paused: {IsPaused}");
     }
 }

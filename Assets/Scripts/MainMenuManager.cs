@@ -57,6 +57,9 @@ public class MainMenuManager : MonoBehaviour
 
     private void OnStartDayClicked()
     {
+        //if (PauseButton.IsPaused) return;
+        if (SettingsPanelUI.IsPaused) return;
+
         string sceneName = GameStateManager.Instance.GetCurrentDayScene();
         SceneManager.LoadScene(sceneName);
     }

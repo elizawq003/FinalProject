@@ -24,7 +24,7 @@ public class SettingsPanelUI : MonoBehaviour
     public Slider fontSizeSlider;
     public TextMeshProUGUI[] dialogueTexts;
 
-    private bool _isPaused = false;
+    public static bool IsPaused { get; private set; } = false;
     private float[] fontSizes = { 24f, 32f, 40f };
 
     private void Start()
@@ -65,17 +65,33 @@ public class SettingsPanelUI : MonoBehaviour
     private void ClosePopup()
     {
         settingsPopup.SetActive(false);
-        if (!_isPaused)
+        if (!IsPaused)
             Time.timeScale = 1f;
     }
 
-    private void TogglePause()
+    /*private void TogglePause()
     {
-        _isPaused = !_isPaused;
-        Time.timeScale = _isPaused ? 0f : 1f;
+        IsPaused = !IsPaused;
+        Time.timeScale = IsPaused ? 0f : 1f;
         if (pauseButtonText != null)
-            pauseButtonText.text = _isPaused ? "Resume" : "Pause";
-        Debug.Log($"Paused: {_isPaused}");
+            pauseButtonText.text = IsPaused ? "Resume" : "Pause";
+        Debug.Log($"Paused: {IsPaused}");
+    }*/
+
+    public void TogglePause()
+    {
+        IsPaused = !IsPaused;
+        Time.timeScale = IsPaused ? 0f : 1f;
+        if (pauseButtonText != null)
+            pauseButtonText.text = IsPaused ? "Resume" : "Pause";
+
+        // Pause / unpause the music
+        if (MusicManager.Instance != null)
+        {
+            if (IsPaused) MusicManager.Instance.PauseMusic();
+            else MusicManager.Instance.UnPauseMusic();
+        }
+        Debug.Log($"Game paused: {IsPaused}");
     }
 
     private void SetVolume(float value)

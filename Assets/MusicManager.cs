@@ -72,4 +72,16 @@ public class MusicManager : MonoBehaviour
         audioSource.Stop();
         audioSource.volume = 1f;
     }
+
+    public void PauseMusic()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+            audioSource.Pause();
+    }
+
+    public void UnPauseMusic()
+    {
+        if (audioSource != null)
+            audioSource.UnPause();
+    }
 }
