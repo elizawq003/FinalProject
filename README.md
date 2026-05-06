@@ -1,4 +1,4 @@
-
+# DIGS Game Design Intro Class
 # Unity Project Setup
 
 ## 1. Clone the project to Github Desktop
